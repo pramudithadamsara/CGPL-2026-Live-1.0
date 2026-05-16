@@ -1,0 +1,12 @@
+# Robots.txt for Ceylonspizee Global (Pvt) Ltd
+# https://www.ceylonspizee.com
+
+User-agent: *
+Allow: /
+
+# Block template files and component directories
+Disallow: /components/
+Disallow: /blog-post-template.html
+
+# Sitemap
+Sitemap: https://www.ceylonspizee.com/sitemap.xml
