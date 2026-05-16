@@ -1,0 +1,510 @@
+/* ============================================
+   CEYLONSPIZEE GLOBAL - MAIN STYLESHEET
+   ============================================ */
+
+/* Material Symbols Configuration */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Filled Material Symbols */
+.material-symbols-filled {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Drop Cap for Blog Posts */
+.drop-cap::first-letter {
+    float: left;
+    font-family: 'Newsreader';
+    font-size: 5rem;
+    line-height: 0.8;
+    padding-right: 12px;
+    padding-top: 4px;
+    color: #7C4A1E;
+}
+
+/* Active Navigation State */
+.active-nav {
+    border-bottom: 2px solid #603308;
+    padding-bottom: 4px;
+}
+
+/* Text Shadow Utilities */
+.text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Founder Quote Style */
+.founder-quote {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    border-left: 4px solid #d97706;
+}
+
+/* Story Section Scroll Margin */
+.story-section {
+    scroll-margin-top: 80px;
+}
+
+/* Glass Navigation Effect */
+.glass-nav {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Serif Text Utility */
+.serif-text {
+    font-family: 'Newsreader', serif;
+}
+
+/* Products Page Specific Styles */
+body.products-page {
+    background-color: #fff8f5;
+    color: #201b17;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.products-page h1,
+.products-page h2,
+.products-page h3,
+.products-page .serif-text {
+    font-family: 'Newsreader', serif;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+    background: linear-gradient(to right, rgba(27, 27, 27, 0.8) 0%, rgba(27, 27, 27, 0.2) 100%);
+}
+
+/* Custom Scrollbar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Flip Card Styles */
+.flip-card {
+    perspective: 1000px;
+    min-height: 400px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    z-index: 2;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Mobile Flip Card Styles */
+@media (max-width: 768px) {
+    .flip-card {
+        min-height: 320px;
+        margin-bottom: 1rem;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(0deg);
+    }
+    
+    .flip-card:active .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-inner {
+        transition: transform 0.4s;
+    }
+    
+    .flip-card-front {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .flip-card-back {
+        padding: 1rem;
+    }
+    
+    .flip-card-front h3 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .flip-card-front p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .flip-card-front a {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+        margin-top: auto;
+    }
+    
+    .flip-card-back .text-white p {
+        font-size: 0.875rem;
+    }
+    
+    .flip-card-back ul {
+        font-size: 0.75rem;
+    }
+    
+    .flip-card-back ul li {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Focus States for Accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #603308;
+    outline-offset: 2px;
+}
+
+/* Image Loading States */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+}
+
+img.loaded,
+img:not([loading="lazy"]) {
+    opacity: 1;
+}
+
+/* Animation Utilities */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Custom Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Parallax Effect - GPU Accelerated */
+.parallax-bg {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    object-fit: cover;
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.float-image {
+    animation: float 6s ease-in-out infinite;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+/* Mobile Touch Improvements */
+@media (hover: none) and (pointer: coarse) {
+    .hover-lift:hover {
+        transform: none;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* Hero section mobile padding */
+    section.relative.min-h-screen {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    /* Ensure touch targets are adequate */
+    .material-symbols-outlined {
+        font-size: 20px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header,
+    footer,
+    .floating-whatsapp {
+        display: none !important;
+    }
+}
+
+/* Trust Bar Horizontal Scroll Animation */
+.trust-scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.trust-scroll-content {
+    display: flex;
+    width: max-content;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+
+/* Particle Animation */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  animation: float-up linear infinite;
+  pointer-events: none;
+  box-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(120vh) scale(0.5);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh) scale(2);
+    opacity: 0;
+  }
+}
+
+/* Select Dropdown Styling */
+select option {
+  background-color: #1c1917;
+  color: white;
+}
+
+/* Parallax Hero Background Layers */
+.parallax-layer {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 120vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+will-change: transform;
+}
+
+.layer-1 {
+z-index: 1;
+background-image: url('../assets/images/cgpl-home-hero-0.webp');
+background-color: #2d3142;
+}
+
+.layer-2 {
+z-index: 2;
+background-image: url('../assets/images/cgpl-home-hero-2.webp');
+background-color: rgba(0, 0, 0, 0.3);
+background-blend-mode: multiply;
+}
+
+/* Rotating Circle Animation */
+.logo-container {
+position: relative;
+width: 120px;
+height: 120px;
+flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+.logo-container {
+width: 160px;
+height: 160px;
+}
+}
+
+@media (min-width: 768px) {
+.logo-container {
+width: 200px;
+height: 200px;
+}
+}
+
+@media (min-width: 1024px) {
+.logo-container {
+width: 240px;
+height: 240px;
+}
+}
+
+.logo-circle {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100%;
+background-image: url('../assets/images/circle.webp');
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+will-change: transform;
+transition: transform 0.1s ease-out;
+}
+
+/* Auto-rotate animation for hero section logo-circle */
+#logoCircleHero {
+animation: autoRotate 20s linear infinite;
+}
+
+/* Auto-rotate animation for footer logo-circle */
+#logoCircleFooter {
+animation: autoRotate 20s linear infinite;
+}
+
+@keyframes autoRotate {
+from {
+transform: translate(-50%, -50%) rotate(0deg);
+}
+to {
+transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+
+.logo-center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 60%;
+height: 60%;
+background-image: url('../assets/images/logo.webp');
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+z-index: 2;
+animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+0%, 100% {
+transform: translate(-50%, -50%) translateY(0px);
+}
+50% {
+transform: translate(-50%, -50%) translateY(-5px);
+}
+}
+
+/* Parallax effect for hero background image */
+.parallax-bg {
+will-change: transform;
+}
+
+@media (min-width: 768px) {
+.parallax-bg {
+transform: translateY(var(--parallax-offset, 0));
+}
+}

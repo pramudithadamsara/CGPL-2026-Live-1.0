@@ -1,0 +1,55 @@
+<!-- Top Navigation Shell -->
+<header class="bg-stone-900 fixed top-0 w-full z-50 border-b border-white/5 shadow-sm">
+    <div class="flex justify-between items-center px-4 md:px-8 py-3 md:py-4 max-w-screen-2xl mx-auto transition-all duration-300 ease-in-out">
+        <a href="/index.html" class="flex items-center space-x-2 md:space-x-3">
+            <img class="w-8 h-auto md:w-10 lg:w-12" alt="Ceylonspizee Logo" src="/images/ceylonspizee.png"/>
+            <span class="text-lg md:text-xl font-bold text-stone-50 italic font-serif tracking-tight Newsreader">
+                Ceylonspizee
+            </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <a class="text-white border-b-2 border-orange-800 pb-1 font-serif nav-link" href="/index.html" data-page="index">Home</a>
+            <a class="text-stone-400 hover:text-stone-200 transition-colors font-serif nav-link" href="/products.html" data-page="products">Products</a>
+            <a class="text-stone-400 hover:text-stone-200 transition-colors font-serif nav-link" href="/agarwood-oil-suppliers.html" data-page="agarwood-oils">Oudh Oils</a>
+            <a class="text-stone-400 hover:text-stone-200 transition-colors font-serif nav-link" href="/our-story.html" data-page="our-story">Our Story</a>
+            <a class="text-stone-400 hover:text-stone-200 transition-colors font-serif nav-link" href="/contact.html" data-page="contact">Contact</a>
+            <a class="text-stone-400 hover:text-stone-200 transition-colors font-serif nav-link" href="/blog/index.html" data-page="insights">Insights</a>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <div class="flex space-x-3 xl:space-x-4">
+                <a href="tel:+94701363641" class="material-symbols-outlined text-orange-500 cursor-pointer hover:text-orange-400 transition-colors" aria-label="Call us">call</a>
+                <a href="mailto:info@ceylonspizee.com" class="material-symbols-outlined text-orange-500 cursor-pointer hover:text-orange-400 transition-colors" aria-label="Email us">mail</a>
+            </div>
+            <a href="/contact.html" class="bg-primary text-on-primary px-4 xl:px-6 py-2 font-label-bold text-label-bold hover:bg-primary-container transition-all text-sm xl:text-base">
+                Send Inquiry
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Toggle menu">
+            <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-stone-900 z-40 transform translate-x-full transition-transform duration-300 ease-in-out pt-16">
+        <button id="mobile-menu-close-btn" class="absolute top-4 right-4 text-white p-2" aria-label="Close menu">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+        <div class="flex flex-col items-center justify-center h-full space-y-6 pb-20">
+            <a class="text-2xl text-white font-serif nav-link mobile-nav-link" href="/index.html" data-page="index">Home</a>
+            <a class="text-2xl text-stone-400 hover:text-white transition-colors font-serif nav-link mobile-nav-link" href="/products.html" data-page="products">Products</a>
+            <a class="text-2xl text-stone-400 hover:text-white transition-colors font-serif nav-link mobile-nav-link" href="/agarwood-oil-suppliers.html" data-page="agarwood-oils">Oudh Oils</a>
+            <a class="text-2xl text-stone-400 hover:text-white transition-colors font-serif nav-link mobile-nav-link" href="/our-story.html" data-page="our-story">Our Story</a>
+            <a class="text-2xl text-stone-400 hover:text-white transition-colors font-serif nav-link mobile-nav-link" href="/contact.html" data-page="contact">Contact</a>
+            <a class="text-2xl text-stone-400 hover:text-white transition-colors font-serif nav-link mobile-nav-link" href="/blog/index.html" data-page="insights">Insights</a>
+            <a href="/contact.html" class="mt-6 bg-primary text-on-primary px-8 py-3 font-label-bold text-label-bold hover:bg-primary-container transition-all">
+                Send Inquiry
+            </a>
+        </div>
+    </div>
+</header>

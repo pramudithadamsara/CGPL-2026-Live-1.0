@@ -1,0 +1,201 @@
+<!-- Boxicons CDN -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- Footer -->
+<footer class="bg-stone-900 text-stone-500 py-12 px-8 border-t border-stone-800 font-sans text-sm Be Vietnam Pro">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-screen-2xl mx-auto">
+        <div class="col-span-1 md:col-span-1">
+            <div class="flex flex-col items-center gap-4 mb-6">
+                <!-- Rotating Circle Animation -->
+                <div class="logo-container">
+                    <div class="logo-circle" id="logoCircleFooter"></div>
+                    <div class="logo-center"></div>
+                </div>
+                <a href="index.html" class="text-lg font-serif text-stone-50">Ceylonspizee Global (Pvt) Ltd</a>
+            </div>
+            <p class="mb-6 leading-relaxed">Your trusted partner for premium Ceylon spices and rare Oud oils, directly sourced from Sri Lanka's finest plantations.</p>
+            <div class="flex gap-4">
+                <span class="material-symbols-outlined cursor-pointer hover:text-white">public</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-white">linked_camera</span>
+            </div>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">Quick Links</h4>
+            <a class="block hover:text-stone-200 transition-all" href="ceylon-cinnamon-supplier.html">Ceylon Cinnamon Supplier</a>
+            <a class="block hover:text-stone-200 transition-all" href="products.html">Products</a>
+            <a class="block hover:text-stone-200 transition-all" href="agarwood-oil-suppliers.html">Agarwood Oil Suppliers</a>
+            <a class="block hover:text-stone-200 transition-all" href="our-story.html">Our Story</a>
+            <a class="block hover:text-stone-200 transition-all" href="blog/index.html">Blog</a>
+            <a class="block hover:text-stone-200 transition-all" href="herbal-product-supplier.html">Herbal Product Supplier</a>
+            <a class="block hover:text-stone-200 transition-all" href="ceylon-spice-suppliers.html">Ceylon Spice Suppliers</a>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">Legal</h4>
+            <a class="block hover:text-stone-200 underline decoration-orange-800 underline-offset-4" href="privacy-policy.html">Privacy Policy</a>
+            <a class="block hover:text-stone-200 transition-all" href="refund-policy.html">Refund Policy</a>
+            <a class="block hover:text-stone-200 transition-all" href="terms-conditions.html">Terms & Conditions</a>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">HQ Address</h4>
+            <p>390/01, Colombo Road,<br/>Puwakpitiya, 10712,<br/>Sri Lanka</p>
+            <p class="pt-4">info@ceylonspizee.com</p>
+            <p class="pt-2">+94 70 136 3641</p>
+            <p class="text-xs text-stone-400 pt-1">Contact us via WhatsApp too</p>
+        </div>
+    </div>
+    <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-stone-800 text-center">
+        <p>&copy; 2026 Ceylonspizee Global (Pvt) Ltd. | Business Registration: PV343902<br/>All rights reserved. Premium Ceylon Spices & Oud Oils Exporter.</p>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/94701363641?text=Hello%20CeylonSpizee,%20I'm%20interested%20in%20your%20premium%20Ceylon%20spices%20and%20agarwood%20oil.%20Could%20you%20please%20provide%20more%20information?" 
+   class="floating-whatsapp-btn" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Chat with us on WhatsApp">
+  <i class='bx bxl-whatsapp'></i>
+  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+</a>
+
+<!-- Floating Ask a Question Button -->
+<a href="contact.html" 
+   class="floating-question-btn" 
+   aria-label="Ask a Question">
+  <span class="material-symbols-outlined">chat_bubble</span>
+  <span class="question-tooltip">Ask a Question</span>
+</a>
+
+<style>
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background: #1f2937;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #1f2937;
+}
+
+.floating-whatsapp-btn:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  right: 75px;
+}
+
+.floating-question-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #004930, #003825);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.floating-question-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.floating-question-btn .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.question-tooltip {
+  position: absolute;
+  right: 70px;
+  background: #1f2937;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.question-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #1f2937;
+}
+
+.floating-question-btn:hover .question-tooltip {
+  opacity: 1;
+  visibility: visible;
+  right: 75px;
+}
+
+@media (max-width: 640px) {
+  .floating-whatsapp-btn {
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+    bottom: 16px;
+    right: 16px;
+  }
+  .floating-question-btn {
+    width: 54px;
+    height: 54px;
+    bottom: 80px;
+    right: 16px;
+  }
+  .floating-question-btn .material-symbols-outlined {
+    font-size: 24px;
+  }
+}
+</style>
