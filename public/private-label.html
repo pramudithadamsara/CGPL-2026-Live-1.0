@@ -153,7 +153,8 @@
     transform: scale(1.05);
   }
 </style>
-</head>
+
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/></head>
 <body class="bg-surface text-on-surface font-body-main">
 
 <!-- Header Component -->
@@ -824,9 +825,49 @@
     observer.observe(el);
   });
 
+  // Parallax Effect
+  const layer1 = document.getElementById('layer1');
+  const layer2 = document.getElementById('layer2');
+  const layer3 = document.getElementById('layer3');
+  const layer4 = document.getElementById('layer4');
+  
+  // Parallax speed multipliers
+  const SPEED_LAYER_1 = 0.5;   // Back layer moves UP
+  const SPEED_LAYER_2 = -0.3;  // Front layer moves DOWN (opposite direction!)
+  const PARALLAX_SCROLL_LIMIT = 500;
+  
+  function handleParallax() {
+    const scrolled = window.pageYOffset;
+    const clampedScroll = Math.min(scrolled, PARALLAX_SCROLL_LIMIT);
+    
+    // Hero section parallax
+    if (layer1 && layer2) {
+      const layer1Transform = clampedScroll * SPEED_LAYER_1;
+      const layer2Transform = clampedScroll * SPEED_LAYER_2;
+      layer1.style.transform = `translateY(${layer1Transform}px)`;
+      layer2.style.transform = `translateY(${layer2Transform}px)`;
+    }
+    
+    // Industry Basics section parallax - layer3 fixed, layer4 moves up
+    if (layer3 && layer4) {
+      const sectionTop = document.getElementById('what-is-pl')?.offsetTop || 0;
+      const sectionScroll = Math.min(Math.max(scrolled - sectionTop + window.innerHeight, 0), 300);
+      
+      // layer3 stays fixed (no movement)
+      layer3.style.transform = `translateY(0px)`;
+      
+      // layer4 moves upward as user scrolls down
+      const layer4Transform = sectionScroll * -0.4;  // Upward movement
+      layer4.style.transform = `translateY(${layer4Transform}px)`;
+    }
+  }
+  
+  window.addEventListener('scroll', handleParallax);
+  
   // Initialize
   document.addEventListener('DOMContentLoaded', () => {
     includeHTML();
+    handleParallax();
   });
 </script>
 <script src="js/main.js"></script>

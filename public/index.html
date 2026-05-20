@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ceylonspizee Global | The World's Finest Ceylon Spices</title>
+<title>Ceylonspizee Global | The World's Finest Ceylon Spices & Oud Oils</title>
 <meta name="description" content="Premium organic Ceylon spices and Oud oils sourced directly from Sri Lankan farmers. Exporting cinnamon, pepper, cloves, and essential oils globally with full traceability."/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEKJ17BGS0"></script>
@@ -18,66 +18,119 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="js/tailwind-config.js"></script>
 <link href="css/styles.css" rel="stylesheet"/>
-</head>
+
+<style>
+/* Parallax Hero Background Layers */
+.parallax-layer {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 120vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+will-change: transform;
+}
+
+.layer-1 {
+z-index: 1;
+background-image: url('assets/images/cgpl-home-hero-3.webp');
+background-color: #2d3142;
+}
+
+.layer-2 {
+z-index: 2;
+background-image: url('assets/images/cgpl-home-hero-2.webp');
+background-color: rgba(0, 0, 0, 0.3);
+background-blend-mode: multiply;
+}
+</style>
+
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/></head>
 <body class="bg-background text-on-surface font-body-main overflow-x-hidden">
 <!-- Header Component Placeholder -->
 <div id="site-header"></div>
 <!-- SECTION 1: HERO — SEO OPTIMIZED -->
 <section class="relative h-screen overflow-hidden" aria-label="Ceylon Cinnamon & Spice Supplier Hero">
-<!-- Background image with parallax -->
-<div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('assets/images/cgpl-home-hero-0.webp');"></div>
-<!-- Dark gradient overlay at bottom (fixed, no parallax) -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+<!-- Parallax Background Layers -->
+<div class="parallax-layer layer-1" id="layer1"></div>
+<div class="parallax-layer layer-2" id="layer2"></div>
+<!-- Floating Images -->
+<div class="absolute inset-0 z-[20]">
+<div class="absolute left-4 bottom-20 w-1/3 md:left-0 md:top-1/2 md:-translate-y-1/2 md:w-1/2 md:w-2/5 lg:w-1/3 animate-float-left">
+<img src="assets/images/home-hero-spices.webp" alt="Ceylon Spices" class="w-full h-auto object-contain drop-shadow-2xl">
+</div>
+<div class="absolute right-4 bottom-20 w-1/3 md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-1/3 md:w-1/4 lg:w-1/5 animate-float-right">
+<img src="assets/images/home-hero-oud.webp" alt="Ceylon Oud Oil" class="w-full h-auto object-contain drop-shadow-2xl">
+</div>
+</div>
 <!-- Hero Content -->
-<div class="relative z-10 pt-24 md:pt-32 lg:pt-40 pb-12 md:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
-<div class="max-w-5xl mx-auto">
-  <div class="text-center space-y-8 md:space-y-12">
+<div class="relative z-[30] pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl md:max-w-5xl lg:max-w-5xl mx-auto">
+  <div class="text-center">
 
     <!-- Badge — keyword-rich, crawlable -->
-    <div class="inline-flex items-center justify-center w-full mb-6">
-      <span class="text-white font-semibold tracking-[0.2em] uppercase text-xs sm:text-sm px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
+    <div class="mb-4 md:mb-5 lg:mb-6">
+      <span class="text-white font-semibold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] sm:text-xs md:text-sm px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full inline-block">
         Certified Organic Spice Manufacturer &amp; Exporter — Sri Lanka
       </span>
     </div>
 
     <!-- Rotating Circle Animation -->
-    <div class="flex justify-center mb-8">
-      <div class="logo-container">
+    <div class="flex justify-center mb-4 md:mb-6 lg:mb-8">
+      <div class="logo-container scale-65 md:scale-80 lg:scale-90">
         <div class="logo-circle" id="logoCircleHero"></div>
         <div class="logo-center"></div>
       </div>
     </div>
 
     <!-- H1 — primary keyword first -->
-    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-tight md:leading-[1.05] mb-4">
-      <span class="block mb-1">Ceylon Cinnamon &amp;</span>
-      <span class="block italic text-tertiary">Pure Ceylon Spices</span>
+    <h1 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white leading-tight md:leading-[1.05] mb-3 md:mb-4">
+      <span class="block mb-0.5 md:mb-1">Ceylon Spices &amp;</span>
+      <span class="block italic text-white">Pure Ceylon Oud Oil</span>
     </h1>
 
     <!-- H2 subheading — secondary keyword phrase -->
-    <h2 class="text-xl sm:text-2xl md:text-3xl text-white/90 font-medium mb-2">
+    <h2 class="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 font-medium mb-4 md:mb-6">
       Sri Lanka's Leading True Cinnamon &amp; Spice Supplier for Global B2B
     </h2>
 
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-3 md:gap-4 justify-center items-center mb-6 md:mb-8 lg:mb-10">
+      <a href="#premium-categories" class="inline-flex items-center gap-2 sm:gap-2 md:gap-2 bg-primary text-white px-5 sm:px-6 md:px-7 py-2.5 sm:py-3 md:py-3 rounded-full font-label-bold text-xs sm:text-sm md:text-base hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl">
+        <span class="material-symbols-outlined text-base sm:text-lg md:text-xl">inventory_2</span>
+        <span>Explore All Spices</span>
+      </a>
+      <a href="agarwood-oil-suppliers.html" class="inline-flex items-center gap-2 sm:gap-2 md:gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/30 px-5 sm:px-6 md:px-7 py-2.5 sm:py-3 md:py-3 rounded-full font-label-bold text-xs sm:text-sm md:text-base hover:bg-white/20 transition-all">
+        <span class="material-symbols-outlined text-base sm:text-lg md:text-xl">spa</span>
+        <span>For Oudh Buyers</span>
+      </a>
+    </div>
+
     <!-- Description — long-tail keywords, buyer intent -->
-    <div class="max-w-4xl mx-auto mb-10">
-      <p class="text-white/80 text-lg sm:text-xl md:text-2xl leading-relaxed">
+    <div class="max-w-3xl md:max-w-4xl lg:max-w-4xl mx-auto mb-6 md:mb-8 lg:mb-10 px-2 sm:px-0">
+      <p class="text-white/80 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed">
         Wholesale <strong class="text-white">Ceylon cinnamon</strong> (true cinnamon, <em>Cinnamomum verum</em>),
-        organic pepper, cardamom, cloves and more — sourced directly from certified farms
+        organic pepper, cardamom, cloves and Rare <strong class="text-white">Agarwood Oud oil</strong> — sourced directly from certified farms
         in Sri Lanka. Bulk supply, custom blending, and private labelling for importers,
         retailers, and spice brands worldwide.
       </p>
     </div>
 
     <!-- Feature pills — keyword-anchored -->
-    <div class="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10">
-      <div class="flex items-center gap-3 text-sm sm:text-base md:text-lg text-white/90 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-        <span class="material-symbols-outlined text-tertiary text-lg sm:text-xl">inventory_2</span>
-        <span>Bulk &amp; Private Label Spice Supplier</span>
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-2 md:gap-3 lg:gap-4">
+      <div class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs md:text-xs lg:text-sm text-white/90 bg-white/10 backdrop-blur-sm px-3 sm:px-3 md:px-4 py-1.5 sm:py-1.5 md:py-2 rounded-full">
+        <span class="material-symbols-outlined text-white text-xs sm:text-xs md:text-sm">inventory_2</span>
+        <span>Bulk &amp; Private Label</span>
       </div>
-      <div class="flex items-center gap-3 text-sm sm:text-base md:text-lg text-white/90 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-        <span class="material-symbols-outlined text-tertiary text-lg sm:text-xl">public</span>
-        <span>Global Spice Export &amp; B2B Supply</span>
+      <div class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs md:text-xs lg:text-sm text-white/90 bg-white/10 backdrop-blur-sm px-3 sm:px-3 md:px-4 py-1.5 sm:py-1.5 md:py-2 rounded-full">
+        <span class="material-symbols-outlined text-white text-xs sm:text-xs md:text-sm">public</span>
+        <span>Global Export</span>
+      </div>
+      <div class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs md:text-xs lg:text-sm text-white/90 bg-white/10 backdrop-blur-sm px-3 sm:px-3 md:px-4 py-1.5 sm:py-1.5 md:py-2 rounded-full">
+        <span class="material-symbols-outlined text-white text-xs sm:text-xs md:text-sm">verified</span>
+        <span>Organic/Conventional</span>
       </div>
     </div>
 
@@ -86,119 +139,15 @@
 </div>
 
 <!-- Scroll Indicator -->
-<div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-<svg fill="white" viewBox="0 0 24 24" class="w-8 h-8 opacity-80 filter drop-shadow-lg">
+<div class="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+<svg fill="#603308" viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 opacity-80">
 <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
 </svg>
 </div>
 </section>
-<!-- Trust Bar -->
-<section class="text-white py-4 overflow-hidden" style="background-color: #004930;">
-<div class="trust-scroll-wrapper">
-<div class="trust-scroll-content">
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">spa</span>
-<span class="whitespace-nowrap">Cinnamon</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">circle</span>
-<span class="whitespace-nowrap">Pepper</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_florist</span>
-<span class="whitespace-nowrap">Cardamom</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">spa</span>
-<span class="whitespace-nowrap">Ceylon Spice Supplier</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_florist</span>
-<span class="whitespace-nowrap">Agarwood Oil Supplier</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">Natural Oudh</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">forest</span>
-<span class="whitespace-nowrap">Gyrinops Walla</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">directions_boat</span>
-<span class="whitespace-nowrap">FCL & LCL Shipping</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">flight</span>
-<span class="whitespace-nowrap">Air Freight</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">inventory_2</span>
-<span class="whitespace-nowrap">Private Label Ready</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">Organic Certified</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">public</span>
-<span class="whitespace-nowrap">Directly from Sri Lanka</span>
-</div>
-</div>
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">spa</span>
-<span class="whitespace-nowrap">Cinnamon</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">circle</span>
-<span class="whitespace-nowrap">Pepper</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_florist</span>
-<span class="whitespace-nowrap">Cardamom</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">spa</span>
-<span class="whitespace-nowrap">Ceylon Spice Supplier</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_florist</span>
-<span class="whitespace-nowrap">Agarwood Oil Supplier</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">Natural Oudh</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">forest</span>
-<span class="whitespace-nowrap">Gyrinops Walla</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">directions_boat</span>
-<span class="whitespace-nowrap">FCL & LCL Shipping</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">flight</span>
-<span class="whitespace-nowrap">Air Freight</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">inventory_2</span>
-<span class="whitespace-nowrap">Private Label Ready</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">Organic Certified</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">public</span>
-<span class="whitespace-nowrap">Directly from Sri Lanka</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+<div w3-include-html="components/trust-bar.html"></div>
+
 <!-- SECTION 2: WELCOME / ABOUT -->
 <section class="relative py-12 md:py-20 bg-surface-container-low overflow-hidden">
 <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -221,13 +170,43 @@ Welcome to <span class="text-secondary italic">Ceylonspizee</span>
 <p class="text-lg sm:text-xl text-on-surface-variant font-label-bold mb-8 md:mb-12 tracking-wide">
 Transparency. Traceability. Reliability.
 </p>
-<div class="space-y-4 md:space-y-6 text-on-surface text-sm sm:text-base md:text-lg leading-relaxed">
-<p>
-<strong class="text-on-surface">Ceylonspizee Global (Pvt) Ltd</strong> is a certified organic Ceylon cinnamon exporter and bulk spice supplier based in Sri Lanka, sourcing directly from verified smallholder farmer networks. We supply wholesale Ceylon cinnamon (Cinnamomum verum), piperine-rich black pepper, high-curcumin organic turmeric, and rare Walla Patta Agarwood Oud oil.
-</p>
-<p>
-Designed for organic food brands, spice importers, private label spice buyers, and luxury fragrance houses sourcing pure Sri Lankan Oud oil, Ceylonspizee delivers a fully traceable, ethical supply chain certified to international standards. Our proprietary B2B digital traceability portal automates region-specific import documentation for the USA, EU, and UAE, ensuring error-free customs clearance, faster lead times, and complete farm-to-delivery transparency. We especially welcome F&amp;B startups and emerging spice brands worldwide looking to source premium Ceylon cinnamon and organic Ceylon spices without the barrier of large minimum order quantities — our low MOQ, flexible pricing model is built specifically to help early-stage businesses access farm-direct true cinnamon and rare Sri Lankan spices, compete with established brands, and scale confidently. Whether you need bulk true cinnamon, wholesale black pepper, organic turmeric powder, or rare agarwood — we connect your business directly to Sri Lanka's finest certified organic harvests.
-</p>
+<div class="space-y-6 md:space-y-8">
+<div class="flex gap-4 md:gap-6 items-start">
+<div class="bg-primary/10 text-primary w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl sm:text-2xl md:text-3xl">verified</span>
+</div>
+<div>
+<h3 class="font-section-heading text-section-heading md:text-section-heading-md text-primary mb-1 md:mb-2">Single Origin Exporter</h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">Ceylonspizee Global (Pvt) Ltd is a agricultural commodity exporter based in Sri Lanka, sourcing directly from verified smallholder farmer networks.</p>
+</div>
+</div>
+<div class="flex gap-4 md:gap-6 items-start">
+<div class="bg-primary/10 text-primary w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl sm:text-2xl md:text-3xl">inventory_2</span>
+</div>
+<div>
+<h3 class="font-section-heading text-section-heading md:text-section-heading-md text-primary mb-1 md:mb-2">Premium Product Range</h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">We supply wholesale Ceylon cinnamon (Cinnamomum verum), piperine-rich black pepper, high-curcumin organic turmeric, and rare Walla Patta Agarwood Oud oil.</p>
+</div>
+</div>
+<div class="flex gap-4 md:gap-6 items-start">
+<div class="bg-primary/10 text-primary w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl sm:text-2xl md:text-3xl">track_changes</span>
+</div>
+<div>
+<h3 class="font-section-heading text-section-heading md:text-section-heading-md text-primary mb-1 md:mb-2">Full Traceability & Compliance</h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">Our proprietary B2B digital traceability portal automates region-specific import documentation for the USA, EU, and UAE, ensuring error-free customs clearance and complete farm-to-delivery transparency.</p>
+</div>
+</div>
+<div class="flex gap-4 md:gap-6 items-start">
+<div class="bg-primary/10 text-primary w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl sm:text-2xl md:text-3xl">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-section-heading text-section-heading md:text-section-heading-md text-primary mb-1 md:mb-2">Low MOQ for Startups</h3>
+<p class="text-on-surface-variant text-sm sm:text-base leading-relaxed">We especially welcome F&B startups and emerging spice brands. Our low MOQ, flexible pricing model helps early-stage businesses access farm-direct true cinnamon and rare Sri Lankan spices to compete with established brands.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="relative h-96 md:h-[500px] rounded-xl overflow-hidden shadow-xl">
@@ -279,15 +258,15 @@ Designed for organic food brands, spice importers, private label spice buyers, a
 <div class="grid grid-cols-2 gap-3 md:gap-4">
 <div class="space-y-3 md:space-y-4">
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sri Lankan farmer smiling in a lush green spice garden, holding fresh green peppercorns, soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvVRwwioc5kzsqmEy_qDELWqyKbdHEtI0efifcQcp9ShBj8MDEGPA8aGUh0AkdD0_J3STM3_DMMK-3T4it0zL9XtwZhrJewS5_uSO08OtBvKP8C-J0WW-9y5yX5-LklAumkYfUHmw3Se3POznaI_iY6bivtiOc1U0Fh2G5etJDOfdS8Fxm3XTTqVOyWclI3hoP_L8ZjSTauwnTWytvrqsKKGKzr2gpZ5kNEKLEK6BLeLDbmmA6SEW1_Qn3bBUiHMs3miWYE7VMQw"/>
+<img class="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Local ownership concept showing farmers working together" src="assets/images/local-ownership.webp"/>
 </div>
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-36 sm:h-40 md:h-48 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sustainably managed forest floor with traditional agricultural tools leaning against a mossy tree, earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK-q748MYPxkpBRFccAUpBol1vKXLi-LUChyS48KL7eqF24MNwLyN5gYbDhIKH-NU7Lz3wpn8cTrTy9IEVUbnC0r8h3588lLNU4hACt0Zee0vmgic2GFbNfFzSUjgp52xhuFljQlOcQoi9b-CwhffvX2i7tjGUs2CjOVrvurx9iGARc5Kv1RobGMTk1XB7KbKSAc9Nhyo0C33dL-j__vd9g-OgTT6yt9MhGLriAr8Ep47yODelSs1oLz0HagRRDMsR_b71rWr_0A"/>
+<img class="w-full h-36 sm:h-40 md:h-48 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Fair trade concept showing ethical business practices" src="assets/images/regenerative-heritage.webp"/>
 </div>
 </div>
 <div class="pt-6 md:pt-12 space-y-3 md:space-y-4">
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-56 sm:h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Hands of a craftswoman peeling cinnamon bark with traditional tools, detailed close-up showing texture and craftsmanship" src="assets\images\agarwood\ceylon-agarwood-plantation-ceylonspizee.webp"/>
+<img class="w-full h-56 sm:h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Regenerative heritage showing sustainable farming practices" src="assets/images/fair-trade.webp"/>
 </div>
 </div>
 </div>
@@ -310,7 +289,7 @@ Designed for organic food brands, spice importers, private label spice buyers, a
 </div>
 <div>
 <h3 class="font-section-heading text-section-heading md:text-section-heading-md text-white mb-1 md:mb-2">Fair Trade Ethics</h3>
-<p class="text-white/80 text-sm sm:text-base leading-relaxed">We eliminate predatory middlemen. Farmers receive 30-50% higher margins through our direct-to-market digital bridge.</p>
+<p class="text-white/80 text-sm sm:text-base leading-relaxed">By connecting farmers directly to global markets, we help rural communities earn stronger, more sustainable margins for their harvests.</p>
 </div>
 </div>
 <div class="flex gap-4 md:gap-6 items-start">
@@ -328,14 +307,14 @@ Designed for organic food brands, spice importers, private label spice buyers, a
 </div>
 </section>
 <!-- SECTION 4: CORE B2B CATEGORIES -->
-<section class="py-12 md:py-16 lg:py-[100px] bg-stone-900">
+<section id="premium-categories" class="py-12 md:py-16 lg:py-[100px] bg-white">
 <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-8 md:mb-12 lg:mb-16">
-<span class="inline-block py-1 px-3 md:px-4 mb-4 md:mb-6 rounded-full bg-white/10 text-white text-[10px] md:text-xs font-bold tracking-widest uppercase">
+<span class="inline-block py-1 px-3 md:px-4 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase">
 Sri Lankan Premium Categories
 </span>
-<h2 class="font-headline text-2xl sm:text-3xl md:text-4xl text-white mb-3 md:mb-4">Organic Ceylon Spices, Herbs & Oudhs</h2>
-<p class="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">Premium wholesale Ceylon spices, herbs, and rare agarwood oils sourced directly from certified farmers across Sri Lanka.</p>
+<h2 class="font-headline text-2xl sm:text-3xl md:text-4xl text-on-surface mb-3 md:mb-4">Organic Ceylon Spices, Herbs & Oudhs</h2>
+<p class="text-on-surface-variant text-sm sm:text-base md:text-lg max-w-2xl mx-auto">Premium wholesale Ceylon spices, herbs, and rare agarwood oils sourced directly from certified farmers across Sri Lanka.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 h-[600px] md:h-[800px]">
 <!-- Category 1: Cinnamon -->
@@ -381,7 +360,7 @@ Sri Lankan Premium Categories
 </div>
 </div>
 <div class="text-center mt-8 md:mt-12">
-<a href="products.html" class="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 font-label-bold text-label-bold md:text-label-bold-md hover:bg-white hover:text-stone-900 transition-colors text-center">
+<a href="products.html" class="border border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 font-label-bold text-label-bold md:text-label-bold-md hover:bg-primary hover:text-white transition-colors text-center">
     Explore All Products
 </a>
 </div>
@@ -494,12 +473,12 @@ Your browser does not support the video tag.
 </div>
 <div class="w-full bg-white/10 backdrop-blur-sm p-4 md:p-8 flex flex-col md:flex-row justify-around items-center border border-white/10 gap-4 md:gap-8">
 <div class="text-center">
-<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">500+</div>
-<p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Farmer Families</p>
+<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Sri Lankan Origin</div>
+<p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Giving back to our farmers</p>
 </div>
 <div class="h-8 md:h-12 w-px bg-white/20 hidden md:block"></div>
 <div class="text-center">
-<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Organic</div>
+<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Organic/Conventional</div>
 <p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Sustainable Farming</p>
 </div>
 <div class="h-8 md:h-12 w-px bg-white/20 hidden md:block"></div>
@@ -629,6 +608,30 @@ Why Choose Us
 <div w3-include-html="components/testimonials.html"></div>
 <!-- Footer Component Placeholder -->
 <div id="site-footer"></div>
+
+<!-- Parallax JavaScript -->
+<script>
+const layer1 = document.getElementById('layer1');
+const layer2 = document.getElementById('layer2');
+
+const SPEED_LAYER_1 = 0.5;
+const SPEED_LAYER_2 = -0.3;
+const PARALLAX_SCROLL_LIMIT = 500;
+
+function handleScroll() {
+const scrolled = window.pageYOffset;
+const clampedScroll = Math.min(scrolled, PARALLAX_SCROLL_LIMIT);
+
+const layer1Transform = clampedScroll * SPEED_LAYER_1;
+const layer2Transform = clampedScroll * SPEED_LAYER_2;
+
+layer1.style.transform = `translateY(${layer1Transform}px)`;
+layer2.style.transform = `translateY(${layer2Transform}px)`;
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+</script>
 
 <script src="js/main.js"></script>
 </body>

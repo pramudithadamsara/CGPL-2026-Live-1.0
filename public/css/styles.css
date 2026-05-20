@@ -269,6 +269,34 @@ img:not([loading="lazy"]) {
     pointer-events: none;
 }
 
+/* Hero Floating Images Animation */
+@keyframes float-left {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(-15px) translateX(10px);
+    }
+}
+
+@keyframes float-right {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(-15px) translateX(-10px);
+    }
+}
+
+.animate-float-left {
+    animation: float-left 6s ease-in-out infinite;
+}
+
+.animate-float-right {
+    animation: float-right 6s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
 /* Mobile Touch Improvements */
 @media (hover: none) and (pointer: coarse) {
     .hover-lift:hover {

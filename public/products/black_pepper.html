@@ -60,6 +60,14 @@
     "addressRegion": "Western Province",
     "addressLocality": "Sri Lanka"
   },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+94 70 136 3641",
+    "email": "info@ceylonspizee.com",
+    "contactType": "sales",
+    "areaServed": "Worldwide",
+    "availableLanguage": "English"
+  },
   "sameAs": [],
   "knowsAbout": ["Black Pepper", "Ceylon Black Pepper", "Piper nigrum", "Piperine", "Organic Spices"]
 }
@@ -73,8 +81,7 @@
   "name": "Ceylon Black Pepper — High Piperine Peppercorns",
   "description": "Premium organic Ceylon Black Pepper (Piper nigrum) from Sri Lanka with high piperine content (6-10%). Available as whole, cracked, and powdered forms for culinary, wellness, and functional food applications.",
   "brand": {"@type": "Brand", "name": "Ceylonspizee Global"},
-  "countryOfOrigin": "Sri Lanka",
-  "offers": {"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"USD","seller": {"@type":"Organization","name": "Ceylonspizee Global"}}
+  "countryOfOrigin": "Sri Lanka"
 }
 </script>
 
@@ -92,7 +99,8 @@
   ]
 }
 </script>
-</head>
+
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"/></head>
 <body class="bg-background text-on-surface font-body-main">
 <!-- Header Component Placeholder -->
 <div id="site-header"></div>
@@ -131,57 +139,9 @@
 </div>
 </section>
 
-<!-- TRUST BAR -->
-<section class="text-white py-4 overflow-hidden" style="background-color: #004930;">
-<div class="trust-scroll-wrapper">
-<div class="trust-scroll-content">
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">100% Organic Certified</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">GMP & ISO 22000 Facility</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">science</span>
-<span class="whitespace-nowrap">Laboratory Tested</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_shipping</span>
-<span class="whitespace-nowrap">Global Export Expertise</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">groups</span>
-<span class="whitespace-nowrap">Farm-Direct Sourcing</span>
-</div>
-</div>
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">100% Organic Certified</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">GMP & ISO 22000 Facility</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">science</span>
-<span class="whitespace-nowrap">Laboratory Tested</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_shipping</span>
-<span class="whitespace-nowrap">Global Export Expertise</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">groups</span>
-<span class="whitespace-nowrap">Farm-Direct Sourcing</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+<div w3-include-html="../components/trust-bar.html"></div>
+
 
 <!-- PRODUCT OVERVIEW -->
 <section class="py-16 md:py-24 bg-white">

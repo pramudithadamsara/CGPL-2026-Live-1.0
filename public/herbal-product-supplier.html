@@ -54,6 +54,14 @@
     "addressRegion": "Western Province",
     "addressLocality": "Sri Lanka"
   },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+94 70 136 3641",
+    "email": "info@ceylonspizee.com",
+    "contactType": "sales",
+    "areaServed": "Worldwide",
+    "availableLanguage": "English"
+  },
   "sameAs": [],
   "knowsAbout": ["Moringa", "Butterfly Pea Flower", "Gotukola", "Gotu Kola", "Herbal Ingredients", "Ceylon Herbs", "Organic Herbs"],
   "hasOfferCatalog": {
@@ -76,8 +84,7 @@
   "name": "Ceylon Organic Herbal Ingredients — Bulk Export",
   "description": "Premium organic herbal ingredients from Sri Lanka including Moringa oleifera powder and leaves, Butterfly Pea Flower (Clitoria ternatea), and Gotukola (Centella asiatica). Available for food, cosmetic, pharmaceutical, and nutraceutical industries.",
   "brand": {"@type": "Brand", "name": "Ceylonspizee Global"},
-  "countryOfOrigin": "Sri Lanka",
-  "offers": {"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"USD","seller": {"@type":"Organization","name": "Ceylonspizee Global"}}
+  "countryOfOrigin": "Sri Lanka"
 }
 </script>
 
@@ -95,7 +102,8 @@
   ]
 }
 </script>
-</head>
+
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/></head>
 <body class="bg-background text-on-surface font-body-main">
 <!-- Header Component Placeholder -->
 <div id="site-header"></div>
@@ -141,57 +149,9 @@
 </section>
 </div>
 
-<!-- TRUST BAR -->
-<section class="text-white py-4 overflow-hidden" style="background-color: #004930;">
-<div class="trust-scroll-wrapper">
-<div class="trust-scroll-content">
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">100% Organic Certified Herbs</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">GMP & ISO 22000 Facility</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">science</span>
-<span class="whitespace-nowrap">Third-Party Lab Tested</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_shipping</span>
-<span class="whitespace-nowrap">Global Export Expertise</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">groups</span>
-<span class="whitespace-nowrap">Farm-Direct Sourcing</span>
-</div>
-</div>
-<div class="flex gap-16 items-center text-sm md:text-base animate-scroll whitespace-nowrap">
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">eco</span>
-<span class="whitespace-nowrap">100% Organic Certified Herbs</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">verified</span>
-<span class="whitespace-nowrap">GMP & ISO 22000 Facility</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">science</span>
-<span class="whitespace-nowrap">Third-Party Lab Tested</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">local_shipping</span>
-<span class="whitespace-nowrap">Global Export Expertise</span>
-</div>
-<div class="flex items-center gap-2 flex-shrink-0">
-<span class="material-symbols-outlined text-white text-lg">groups</span>
-<span class="whitespace-nowrap">Farm-Direct Sourcing</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+<div w3-include-html="components/trust-bar.html"></div>
+
 
 <!-- WHY CEYLON HERBS -->
 <section id="why-ceylon-herbs" class="relative py-16 md:py-24 bg-surface-container-low overflow-hidden">
