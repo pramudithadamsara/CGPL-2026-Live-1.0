@@ -5,6 +5,7 @@
 
 tailwind.config = {
     darkMode: "class",
+    safelist: ['bg-stone-900', 'text-stone-400', 'text-stone-200', 'border-orange-800', 'text-orange-500', 'hover:text-orange-400', 'shadow-sm', 'shadow-lg', 'text-white', 'border-white/5', 'bg-primary', 'text-on-primary', 'z-50', 'z-40', 'pb-1', 'border-b-2', 'border-b'],
     theme: {
         extend: {
             "colors": {
@@ -72,6 +73,7 @@ tailwind.config = {
             "fontFamily": {
                 "label-bold": ["Be Vietnam Pro"],
                 "hero-display": ["Newsreader"],
+                "headline": ["Newsreader"],
                 "body-main": ["Be Vietnam Pro"],
                 "section-heading": ["Newsreader"],
                 "meta-data": ["Be Vietnam Pro"]

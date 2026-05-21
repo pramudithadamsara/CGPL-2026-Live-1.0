@@ -2,49 +2,79 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <!-- Footer -->
-<footer class="bg-stone-900 text-stone-500 py-12 px-8 border-t border-stone-800 font-sans text-sm Be Vietnam Pro">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-screen-2xl mx-auto">
-        <div class="col-span-1 md:col-span-1">
-            <div class="flex flex-col items-center gap-4 mb-6">
-                <!-- Rotating Circle Animation -->
-                <div class="logo-container">
-                    <div class="logo-circle" id="logoCircleFooter"></div>
-                    <div class="logo-center"></div>
+<footer class="bg-[#1A1814] text-stone-200 pt-12 lg:pt-16 pb-4 lg:pb-6 font-body-main text-[15px] md:text-base tracking-widest border-t border-[#2A2824]">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+            
+            <!-- Left Column: Logo & Info -->
+            <div class="lg:col-span-4 flex flex-col md:items-start items-center text-center md:text-left">
+                <div class="mb-4">
+                    <!-- Rotating Circle Animation -->
+                    <div class="logo-container scale-[0.85] origin-center md:origin-left -ml-2">
+                        <div class="logo-circle" id="logoCircleFooter"></div>
+                        <div class="logo-center"></div>
+                    </div>
                 </div>
-                <a href="/index.html" class="text-lg font-serif text-stone-50">Ceylonspizee Global (Pvt) Ltd</a>
+                <h3 class="text-2xl lg:text-3xl font-hero-display font-semibold text-[#c59e5f] tracking-widest mb-4">Ceylonspizee Global (Pvt) Ltd</h3>
+                <p class="mb-8 leading-relaxed max-w-sm text-stone-200">Your trusted partner for premium Ceylon spices and rare Oud oils, directly sourced from Sri Lanka's finest plantations.</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <span class="material-symbols-outlined cursor-pointer text-[#c59e5f] hover:text-white transition-colors text-[24px]">public</span>
+                    <span class="material-symbols-outlined cursor-pointer text-[#c59e5f] hover:text-white transition-colors text-[24px]">linked_camera</span>
+                </div>
             </div>
-            <p class="mb-6 leading-relaxed">Your trusted partner for premium Ceylon spices and rare Oud oils, directly sourced from Sri Lanka's finest plantations.</p>
-            <div class="flex gap-4">
-                <span class="material-symbols-outlined cursor-pointer hover:text-white">public</span>
-                <span class="material-symbols-outlined cursor-pointer hover:text-white">linked_camera</span>
+
+            <!-- Right Column: Links, Address & Newsletter -->
+            <div class="lg:col-span-8 mt-4 lg:mt-0">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 md:gap-x-8 md:gap-y-12 text-left pt-2">
+                    
+                    <!-- Products -->
+                    <div class="col-span-1 space-y-3 md:space-y-4">
+                        <h4 class="text-[#c59e5f] font-hero-display font-semibold uppercase text-[17px] md:text-lg lg:text-xl tracking-widest">Products</h4>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/products.html">All Products</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/ceylon-cinnamon-supplier.html">Ceylon Cinnamon</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/agarwood-oil-suppliers.html">Agarwood Oud Oil</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/ceylon-spice-suppliers.html">Ceylon Spices</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/herbal-product-supplier.html">Herbal Products</a>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="col-span-1 space-y-3 md:space-y-4">
+                        <h4 class="text-[#c59e5f] font-hero-display font-semibold uppercase text-[17px] md:text-lg lg:text-xl tracking-widest">Company</h4>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/our-story.html">Our Story</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/blog/index.html">Blog & Insights</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/privacy-policy.html">Privacy Policy</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/refund-policy.html">Refund Policy</a>
+                        <a class="block hover:text-white transition-colors text-[15px] md:text-base" href="/terms-conditions.html">Terms & Conditions</a>
+                    </div>
+
+                    <!-- HQ Address -->
+                    <div class="col-span-2 md:col-span-1 md:row-span-2 space-y-3 md:space-y-4">
+                        <h4 class="text-[#c59e5f] font-hero-display font-semibold uppercase text-[17px] md:text-lg lg:text-xl tracking-widest">HQ Address</h4>
+                        <p class="leading-relaxed text-stone-100 text-[15px] md:text-base">390/01, Colombo Road,<br/>Puwakpitiya, 10712,<br/>Sri Lanka</p>
+                        <div class="pt-2 space-y-4 flex flex-col items-start text-stone-100">
+                            <a href="mailto:info@ceylonspizee.com" class="flex items-center gap-3 hover:text-white transition-colors text-[15px] md:text-base"><span class="material-symbols-outlined text-[#c59e5f] text-[20px] w-6 text-center">mail</span> <span>info@ceylonspizee.com</span></a>
+                            <a href="tel:+94701363641" class="flex items-center gap-3 hover:text-white transition-colors text-[15px] md:text-base"><span class="material-symbols-outlined text-[#c59e5f] text-[20px] w-6 text-center">call</span> <span>+94 70 136 3641</span></a>
+                            <p class="pt-1 flex items-center justify-start gap-3 text-[15px] md:text-base"><i class='bx bxl-whatsapp text-[#c59e5f] text-[20px] w-6 text-center'></i> <span>Contact us via WhatsApp too</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-span-2 md:col-span-2 space-y-3 md:space-y-4 mt-2 lg:mt-0">
+                        <h4 class="text-[#c59e5f] font-hero-display font-semibold uppercase text-[17px] md:text-lg lg:text-xl tracking-widest">Newsletter</h4>
+                        <form class="flex w-full max-w-[380px] mr-auto">
+                            <input type="email" placeholder="Enter your email address" class="w-full bg-transparent border border-[#4a4031] text-white px-4 py-[10px] focus:outline-none focus:border-[#c59e5f] text-[15px] md:text-base placeholder-stone-500 rounded-l-sm tracking-wider" required>
+                            <button type="submit" class="bg-[#c59e5f] text-[#1A1814] font-bold px-4 md:px-6 py-[10px] hover:bg-[#d6b070] transition-colors rounded-r-sm whitespace-nowrap text-[15px] md:text-base tracking-wider">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="space-y-4">
-            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">Quick Links</h4>
-            <a class="block hover:text-stone-200 transition-all" href="/ceylon-cinnamon-supplier.html">Ceylon Cinnamon Supplier</a>
-            <a class="block hover:text-stone-200 transition-all" href="/products.html">Products</a>
-            <a class="block hover:text-stone-200 transition-all" href="/agarwood-oil-suppliers.html">Agarwood Oil Suppliers</a>
-            <a class="block hover:text-stone-200 transition-all" href="/our-story.html">Our Story</a>
-            <a class="block hover:text-stone-200 transition-all" href="/blog/index.html">Blog</a>
-            <a class="block hover:text-stone-200 transition-all" href="/herbal-product-supplier.html">Herbal Product Supplier</a>
-            <a class="block hover:text-stone-200 transition-all" href="/ceylon-spice-suppliers.html">Ceylon Spice Suppliers</a>
+
+        <div class="mt-16 pt-10 pb-4 border-t border-[#3A352D] text-center font-body-main text-xs md:text-[13px] text-stone-400 tracking-widest leading-loose">
+            <p class="mb-3">&copy; 2026 Ceylonspizee Global (Pvt) Ltd. | Business Registration: PV343902</p>
+            <p>All rights reserved. Premium Ceylon Spices & Oud Oils Exporter.</p>
         </div>
-        <div class="space-y-4">
-            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">Legal</h4>
-            <a class="block hover:text-stone-200 underline decoration-orange-800 underline-offset-4" href="/privacy-policy.html">Privacy Policy</a>
-            <a class="block hover:text-stone-200 transition-all" href="/refund-policy.html">Refund Policy</a>
-            <a class="block hover:text-stone-200 transition-all" href="/terms-conditions.html">Terms & Conditions</a>
-        </div>
-        <div class="space-y-4">
-            <h4 class="text-white font-label-bold uppercase text-xs tracking-widest mb-4">HQ Address</h4>
-            <p>390/01, Colombo Road,<br/>Puwakpitiya, 10712,<br/>Sri Lanka</p>
-            <p class="pt-4">info@ceylonspizee.com</p>
-            <p class="pt-2">+94 70 136 3641</p>
-            <p class="text-xs text-stone-400 pt-1">Contact us via WhatsApp too</p>
-        </div>
-    </div>
-    <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-stone-800 text-center">
-        <p>&copy; 2026 Ceylonspizee Global (Pvt) Ltd. | Business Registration: PV343902<br/>All rights reserved. Premium Ceylon Spices & Oud Oils Exporter.</p>
     </div>
 </footer>
 
@@ -82,7 +112,7 @@
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 30;
   text-decoration: none;
 }
 
@@ -136,7 +166,7 @@
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 30;
   text-decoration: none;
 }
 
@@ -182,20 +212,10 @@
 
 @media (max-width: 640px) {
   .floating-whatsapp-btn {
-    width: 54px;
-    height: 54px;
-    font-size: 24px;
-    bottom: 16px;
-    right: 16px;
+    display: none;
   }
   .floating-question-btn {
-    width: 54px;
-    height: 54px;
-    bottom: 80px;
-    right: 16px;
-  }
-  .floating-question-btn .material-symbols-outlined {
-    font-size: 24px;
+    display: none;
   }
 }
 </style>
