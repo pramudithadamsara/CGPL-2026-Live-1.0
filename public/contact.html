@@ -25,51 +25,74 @@
 <div id="site-header"></div>
 <main class="w-full">
 <!-- Hero Section -->
-<section class="relative h-[409px] flex items-center justify-center bg-neutral-900 overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover opacity-40 blur-sm" alt="Premium whole spices on volcanic stone surface" src="assets/images/cgpl-home-hero-0.webp"/>
-<div class="absolute inset-0 bg-black/50"></div>
-<div class="relative z-10 text-center px-6">
-<h1 class="font-hero-display text-hero-display text-amber-50 mb-4">Establish Connection</h1>
-<p class="font-body-main text-amber-50/80 max-w-xl mx-auto">Bridging the gap between the fertile soil of Ceylon and global high-end culinary requirements with professional transparency.</p>
+<section class="relative min-h-[60vh] md:min-h-[70vh] flex flex-col justify-center overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 bg-stone-900">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 scale-105 opacity-50" alt="Premium whole spices on volcanic stone surface" src="assets/images/cgpl-home-hero-0.webp"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
+
+<div class="relative z-10 w-full flex flex-col px-4 sm:px-12 lg:px-16 text-center">
+<div class="max-w-4xl mx-auto">
+    <!-- Badge -->
+    <div class="mb-5 md:mb-8">
+      <span class="text-white font-semibold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] sm:text-xs md:text-sm px-4 sm:px-5 py-2 sm:py-2.5 bg-white/10 backdrop-blur-md rounded-full inline-block border border-white/20 shadow-xl">
+        Global Export Partnerships
+      </span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight md:leading-[1.05] mb-4 md:mb-6 drop-shadow-2xl">
+        Establish <span class="italic text-[#c59e5f]">Connection</span>
+    </h1>
+    
+    <!-- Subtitle -->
+    <p class="font-body-main text-white/90 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide drop-shadow-lg">
+        Bridging the gap between the fertile soil of Ceylon and global high-end culinary requirements with professional transparency.
+    </p>
+</div>
+</div>
+
+<!-- Scroll Indicator -->
+<div class="absolute bottom-6 md:bottom-8 inset-x-0 flex justify-center z-20 pointer-events-none">
+    <a href="#contact-section" class="text-white hover:text-[#c59e5f] transition-colors duration-300 animate-bounce pointer-events-auto cursor-pointer">
+        <span class="material-symbols-outlined text-6xl md:text-[80px] drop-shadow-xl">keyboard_arrow_down</span>
+    </a>
 </div>
 </section>
 <!-- Contact Section Component Placeholder -->
 <div id="contact-section"></div>
 <!-- Quick Contact & Global Footprint -->
-<section class="max-w-7xl mx-auto px-6 py-24">
-<div class="space-y-16">
-<!-- Quick Contact Cards -->
-<div class="grid grid-cols-1 gap-6">
-<div class="bg-surface-container-low p-8 border-l-4 border-primary-container">
-<div class="flex items-center gap-4 mb-4">
-<span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
-<h3 class="font-label-bold text-primary">Headquarters &amp; Export Hub</h3>
-</div>
-<p class="text-on-surface mb-1">390/01, Colombo Road</p>
-<p class="text-on-surface">Puwakpitiya, 10712, Sri Lanka</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white p-6 border border-outline-variant/30 flex items-center gap-4 group hover:bg-surface-container-high transition-colors">
-<div class="w-12 h-12 bg-primary-fixed-dim rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary">phone</span>
-</div>
-<div>
-<p class="font-meta-data text-on-surface-variant">Primary Line</p>
-<p class="font-label-bold">+94 70 136 3641</p>
-</div>
-</div>
-<div class="bg-white p-6 border border-outline-variant/30 flex items-center gap-4 group hover:bg-surface-container-high transition-colors">
-<div class="w-12 h-12 bg-primary-fixed-dim rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-primary">mail</span>
-</div>
-<div>
-<p class="font-meta-data text-on-surface-variant">Global Relations</p>
-<p class="font-label-bold">info@ceylonspizee.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Headquarters -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-200 group hover:-translate-y-1 transition-all duration-300">
+            <div class="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#c59e5f] group-hover:text-white transition-colors duration-300 text-[#c59e5f]">
+                <span class="material-symbols-outlined text-2xl">corporate_fare</span>
+            </div>
+            <h3 class="font-headline text-2xl font-bold text-stone-900 mb-3 tracking-wide">Headquarters</h3>
+            <p class="font-body-main text-stone-600 leading-relaxed text-lg">390/01, Colombo Road<br>Puwakpitiya, 10712<br>Sri Lanka</p>
+        </div>
+
+        <!-- Primary Line -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-200 group hover:-translate-y-1 transition-all duration-300">
+            <div class="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#c59e5f] group-hover:text-white transition-colors duration-300 text-[#c59e5f]">
+                <span class="material-symbols-outlined text-2xl">phone_in_talk</span>
+            </div>
+            <h3 class="font-headline text-2xl font-bold text-stone-900 mb-3 tracking-wide">Primary Line</h3>
+            <a href="tel:+94701363641" class="font-body-main text-stone-600 hover:text-[#c59e5f] transition-colors text-lg inline-block mb-1">+94 70 136 3641</a>
+            <p class="font-body-main text-stone-500 text-base mt-1">Available 24/7 on WhatsApp</p>
+        </div>
+
+        <!-- Global Relations -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-stone-200 group hover:-translate-y-1 transition-all duration-300">
+            <div class="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#c59e5f] group-hover:text-white transition-colors duration-300 text-[#c59e5f]">
+                <span class="material-symbols-outlined text-2xl">mail</span>
+            </div>
+            <h3 class="font-headline text-2xl font-bold text-stone-900 mb-3 tracking-wide">Global Relations</h3>
+            <a href="mailto:info@ceylonspizee.com" class="font-body-main text-stone-600 hover:text-[#c59e5f] transition-colors text-lg inline-block mb-1">info@ceylonspizee.com</a>
+            <p class="font-body-main text-stone-500 text-base mt-1">Response within 1 business day</p>
+        </div>
+        
+    </div>
 </section>
 </main>
 <!-- Footer Component Placeholder -->

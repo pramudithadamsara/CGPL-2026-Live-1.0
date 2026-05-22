@@ -52,7 +52,7 @@ background-blend-mode: multiply;
 <!-- Header Component Placeholder -->
 <div id="site-header"></div>
 <!-- SECTION 1: HERO — SEO OPTIMIZED -->
-<section class="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Ceylon Cinnamon & Spice Supplier Hero">
+<section class="relative min-h-0 md:min-h-[100svh] flex flex-col justify-center overflow-hidden" aria-label="Ceylon Cinnamon & Spice Supplier Hero">
 <!-- Parallax Background Layers -->
 <div class="parallax-layer layer-1" id="layer1"></div>
 <div class="parallax-layer layer-2" id="layer2"></div>
@@ -66,7 +66,7 @@ background-blend-mode: multiply;
 </div>
 </div>
 <!-- Hero Content -->
-<div class="relative z-[30] w-full flex flex-col px-8 sm:px-12 lg:px-16 pt-28 md:pt-32 lg:pt-40 pb-8 lg:pb-12">
+<div class="relative z-[30] w-full flex flex-col px-4 sm:px-12 lg:px-16 pt-32 md:pt-32 lg:pt-40 pb-24 md:pb-12 lg:pb-16">
 <div class="max-w-4xl md:max-w-5xl lg:max-w-5xl mx-auto">
   <div class="text-center">
 
@@ -139,23 +139,23 @@ background-blend-mode: multiply;
 </div>
 
 <!-- Scroll Indicator -->
-<div class="hidden lg:block absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-<svg fill="#603308" viewBox="0 0 24 24" class="w-8 h-8 md:w-10 md:h-10 opacity-80">
-<path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-</svg>
+<div class="absolute bottom-6 md:bottom-8 inset-x-0 flex justify-center z-20 pointer-events-none">
+<a href="#about" class="text-white hover:text-primary transition-colors duration-300 animate-bounce pointer-events-auto cursor-pointer">
+<span class="material-symbols-outlined text-6xl md:text-[80px] drop-shadow-xl">keyboard_arrow_down</span>
+</a>
 </div>
 </section>
 
 <div w3-include-html="components/trust-bar.html"></div>
 
 <!-- SECTION 2: WELCOME / ABOUT -->
-<section class="relative py-12 md:py-20 bg-surface-container-low overflow-hidden">
+<section id="about" class="relative py-12 md:py-20 bg-surface-container-low overflow-hidden">
 <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 lg:px-16 xl:px-24 relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-center">
 <div>
-<h4 class="text-xs md:text-sm font-label-bold tracking-[0.25em] text-on-surface-variant uppercase mb-4 md:mb-6">
+<span class="inline-block py-1.5 px-5 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-label-bold tracking-widest uppercase shadow-sm border border-primary/20">
 About Ceylonspizee
-</h4>
+</span>
 <h2 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] text-primary leading-[1.1] mb-6 md:mb-8">
 <span class="block">Welcome to</span>
 <span class="block italic">Ceylonspizee</span>
@@ -257,15 +257,15 @@ Transparency. Traceability. Reliability.
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
 <div class="space-y-3 md:space-y-4">
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Local ownership concept showing farmers working together" src="assets/images/local-ownership.webp"/>
+<img class="w-full h-72 sm:h-64 md:h-72 object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-110" data-alt="Local ownership concept showing farmers working together" src="assets/images/local-ownership.webp"/>
 </div>
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-36 sm:h-40 md:h-48 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Fair trade concept showing ethical business practices" src="assets/images/regenerative-heritage.webp"/>
+<img class="w-full h-56 sm:h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Fair trade concept showing ethical business practices" src="assets/images/regenerative-heritage.webp"/>
 </div>
 </div>
 <div class="pt-6 md:pt-12 space-y-3 md:space-y-4">
 <div class="relative group rounded-lg md:rounded-xl overflow-hidden">
-<img class="w-full h-56 sm:h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Regenerative heritage showing sustainable farming practices" src="assets/images/fair-trade.webp"/>
+<img class="w-full h-80 sm:h-72 md:h-96 object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-110" data-alt="Regenerative heritage showing sustainable farming practices" src="assets/images/fair-trade.webp"/>
 </div>
 </div>
 </div>
@@ -306,147 +306,167 @@ Transparency. Traceability. Reliability.
 </div>
 </section>
 <!-- SECTION 4: CORE B2B CATEGORIES -->
-<section id="premium-categories" class="py-12 md:py-16 lg:py-[100px] bg-white">
+<section id="premium-categories" class="pt-12 md:pt-16 lg:pt-[100px] pb-8 md:pb-10 lg:pb-12 bg-white">
 <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-8 md:mb-12 lg:mb-16">
-<span class="inline-block py-1 px-3 md:px-4 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase">
+<div class="text-left md:text-center mb-8 md:mb-12 lg:mb-16">
+<span class="inline-block py-1.5 px-5 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-label-bold tracking-widest uppercase shadow-sm border border-primary/20">
 Sri Lankan Premium Categories
 </span>
-<h2 class="font-headline text-2xl sm:text-3xl md:text-4xl text-on-surface mb-3 md:mb-4">Organic Ceylon Spices, Herbs & Oudhs</h2>
-<p class="text-on-surface-variant text-sm sm:text-base md:text-lg max-w-2xl mx-auto">Premium wholesale Ceylon spices, herbs, and rare agarwood oils sourced directly from certified farmers across Sri Lanka.</p>
+<h2 class="font-headline text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-on-surface mb-4 md:mb-6">Organic Ceylon Spices, Herbs & Oudhs</h2>
+<p class="font-body-main text-on-surface-variant text-sm sm:text-base md:text-lg max-w-2xl mx-0 md:mx-auto">Premium wholesale Ceylon spices, herbs, and rare agarwood oils sourced directly from certified farmers across Sri Lanka.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 h-[600px] md:h-[800px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 md:h-[800px]">
 <!-- Category 1: Cinnamon -->
-<div class="md:col-span-2 md:row-span-2 relative group rounded-xl overflow-hidden">
+<a href="ceylon-cinnamon-supplier.html" class="block min-h-[280px] md:min-h-0 md:col-span-2 md:row-span-2 relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
 <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Premium quills of Alba grade Ceylon cinnamon sticks artfully arranged on a textured paper surface" src="assets/images/products/ceylon-cinnamon-powder-main.webp"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 p-4 md:p-10">
-<h3 class="font-headline text-xl md:text-3xl text-white mb-2">Ceylon Cinnamon (True Cinnamon)</h3>
-<p class="text-white/80 mb-4 md:mb-6 text-sm md:text-base max-w-sm">The highest grade of true cinnamon. Ultra-slim quills with a delicate sweet profile.</p>
-<a class="text-white font-bold underline underline-offset-4 decoration-tertiary text-sm md:text-base hover:text-tertiary-fixed transition-colors" href="ceylon-cinnamon-supplier.html">Explore Cinnamon Products</a>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-6 md:p-10 bg-black/40 backdrop-blur-md border-t border-white/10">
+<h3 class="font-headline text-2xl md:text-4xl font-bold tracking-wide text-white mb-2 md:mb-3">Ceylon Cinnamon (True Cinnamon)</h3>
+<p class="font-body-main tracking-wider text-white/90 mb-4 md:mb-6 text-sm md:text-base max-w-md">The highest grade of true cinnamon. Ultra-slim quills with a delicate sweet profile.</p>
+<span class="text-white font-label-bold uppercase tracking-wider text-xs md:text-sm group-hover:text-primary-fixed transition-colors flex items-center gap-2 group-hover:gap-3">Explore Cinnamon Products <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </div>
-</div>
+</a>
 <!-- Category 2: Ceylon Spices -->
-<div class="relative group rounded-xl overflow-hidden">
+<a href="ceylon-spice-suppliers.html" class="block min-h-[280px] md:min-h-0 relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
 <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Heap of black peppercorns showing varied textures and deep rich colors" src="assets/images/spices.webp"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 p-4 md:p-10">
-<h3 class="font-headline text-lg md:text-2xl text-white mb-2">Ceylon Spices</h3>
-<p class="text-white/80 mb-4 md:mb-6 text-sm md:text-base max-w-sm">High piperine content with premium flavor profiles for culinary and medicinal applications.</p>
-<a class="text-white font-bold underline underline-offset-4 decoration-tertiary text-sm md:text-base hover:text-tertiary-fixed transition-colors" href="ceylon-spice-suppliers.html">Explore Spice Products</a>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-black/40 backdrop-blur-md border-t border-white/10">
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-white mb-2">Ceylon Spices</h3>
+<p class="font-body-main tracking-wider text-white/90 mb-4 text-sm md:text-base max-w-sm">High piperine content with premium flavor profiles for culinary and medicinal applications.</p>
+<span class="text-white font-label-bold uppercase tracking-wider text-[10px] md:text-xs group-hover:text-primary-fixed transition-colors flex items-center gap-2 group-hover:gap-3">Explore Spice Products <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </div>
-</div>
+</a>
 <!-- Category 3: Ceylon Herbs -->
-<div class="relative group rounded-xl overflow-hidden">
+<a href="herbal-product-supplier.html" class="block min-h-[280px] md:min-h-0 relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
 <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Whole cloves spread out on a wooden table, emphasizing their star-like shape and deep brown color" src="assets/images/products/ceylon-butterfly-pea-flower-main.webp"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 p-4 md:p-10">
-<h3 class="font-headline text-lg md:text-2xl text-white mb-2">Ceylon Herbs</h3>
-<p class="text-white/80 mb-4 md:mb-6 text-sm md:text-base max-w-sm">Sun-dried to perfection with high oil content for pharmaceuticals and cuisine.</p>
-<a class="text-white font-bold underline underline-offset-4 decoration-tertiary text-sm md:text-base hover:text-tertiary-fixed transition-colors" href="herbal-product-supplier.html">Explore Herbal Products</a>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-black/40 backdrop-blur-md border-t border-white/10">
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-white mb-2">Ceylon Herbs</h3>
+<p class="font-body-main tracking-wider text-white/90 mb-4 text-sm md:text-base max-w-sm">Sun-dried to perfection with high oil content for pharmaceuticals and cuisine.</p>
+<span class="text-white font-label-bold uppercase tracking-wider text-[10px] md:text-xs group-hover:text-primary-fixed transition-colors flex items-center gap-2 group-hover:gap-3">Explore Herbal Products <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </div>
-</div>
+</a>
 <!-- Category 4: Agarwood & Oud Oils -->
-<div class="md:col-span-2 relative group rounded-xl overflow-hidden">
+<a href="agarwood-oil-suppliers.html" class="block min-h-[280px] md:min-h-0 md:col-span-2 relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
 <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Elegant glass bottle of dark essential oil surrounded by exotic woods and incense" src="assets/images/oudh-oil.webp"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 p-4 md:p-10">
-<h3 class="font-headline text-lg md:text-2xl text-white mb-2">Agarwood & Oud Oils</h3>
-<p class="text-white/80 mb-4 md:mb-6 text-sm md:text-base max-w-sm">Rare and sustainably extracted essential oils for luxury fragrance and therapeutic applications.</p>
-<a class="text-white font-bold underline underline-offset-4 decoration-tertiary text-sm md:text-base hover:text-tertiary-fixed transition-colors" href="agarwood-oil-suppliers.html">Explore Agarwood Products</a>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-black/40 backdrop-blur-md border-t border-white/10">
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-white mb-2">Agarwood & Oud Oils</h3>
+<p class="font-body-main tracking-wider text-white/90 mb-4 text-sm md:text-base max-w-sm">Rare and sustainably extracted essential oils for luxury fragrance and therapeutic applications.</p>
+<span class="text-white font-label-bold uppercase tracking-wider text-[10px] md:text-xs group-hover:text-primary-fixed transition-colors flex items-center gap-2 group-hover:gap-3">Explore Agarwood Products <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </div>
-</div>
+</a>
 </div>
 </div>
 <div class="text-center mt-8 md:mt-12">
-<a href="products.html" class="border border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 font-label-bold text-label-bold md:text-label-bold-md hover:bg-primary hover:text-white transition-colors text-center">
+<a href="products.html" class="inline-block border-2 border-primary text-primary px-6 sm:px-10 py-3 sm:py-4 font-headline uppercase tracking-[0.15em] text-base sm:text-lg font-bold hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-xl text-center rounded-sm">
     Explore All Products
 </a>
 </div>
 </section>
 <!-- SECTION 5: PRIVATE LABEL SERVICES -->
-<section class="relative py-16 md:py-24 lg:py-[120px] overflow-hidden text-on-surface" style="background-color: #ffffff;">
-<img class="float-image w-32 h-32 md:w-48 md:h-48 lg:w-96 lg:h-96 xl:w-[36rem] xl:h-[36rem] object-contain top-8 right-8" src="assets/images/cinnamon.webp" alt="Cinnamon"/>
-<img class="float-image w-32 h-32 md:w-48 md:h-48 lg:w-96 lg:h-96 xl:w-[36rem] xl:h-[36rem] object-contain bottom-8 left-8" style="animation-delay: 3s;" src="assets/images/pepper.webp" alt="Pepper"/>
+<section class="relative pt-8 md:pt-10 lg:pt-12 pb-16 md:pb-24 lg:pb-[120px] overflow-hidden text-on-surface bg-surface-container-lowest">
+
 <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12 md:mb-16 lg:mb-20">
-<span class="inline-block py-1 px-4 md:px-5 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase">
+<div class="text-left md:text-center mb-16 md:mb-24 relative max-w-[1400px] mx-auto px-4">
+<div class="text-left md:text-center relative z-10">
+<!-- Badge -->
+<span class="inline-block py-1.5 px-5 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-label-bold tracking-widest uppercase shadow-sm border border-primary/20">
 Premium Services
 </span>
-<h2 class="font-headline text-3xl sm:text-4xl md:text-5xl text-primary mb-4 md:mb-6">Private Label & Sterilization Solutions</h2>
-<p class="text-on-surface-variant text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">Transform your brand with premium Ceylon spices and essential oils under your own label. We provide complete end-to-end private label manufacturing, including advanced steam sterilization, for F&B brands, retailers, and luxury fragrance houses.</p>
+<!-- Heading -->
+<h2 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-wide text-on-surface m-0 text-left md:text-center">
+Private Label & Sterilization Solutions
+</h2>
 </div>
-<div class="space-y-16 md:space-y-24">
+<p class="font-body-main text-on-surface-variant text-base sm:text-lg md:text-xl max-w-3xl mx-0 md:mx-auto leading-relaxed tracking-wide mt-6 md:mt-10 relative z-10 text-left md:text-center">Transform your brand with premium Ceylon spices and essential oils under your own label. We provide complete end-to-end private label manufacturing, including advanced steam sterilization, for F&B brands, retailers, and luxury fragrance houses.</p>
+</div>
+
+<div class="space-y-20 md:space-y-32">
 <!-- Service 1: Custom Branding -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20 items-center">
-<div class="order-2 lg:order-1 relative group rounded-xl overflow-hidden p-8 md:p-12">
-<video class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" autoplay muted loop playsinline>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+<div class="order-2 lg:order-1 relative group">
+<video class="w-full h-[350px] md:h-[450px] lg:h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" autoplay muted loop playsinline>
 <source src="assets/videos/private-label-pouch.mp4" type="video/mp4"/>
-Your browser does not support the video tag.
 </video>
 </div>
-<div class="order-1 lg:order-2 space-y-6">
-<div class="flex items-center gap-4 mb-4">
-<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-2xl">palette</span>
+<div class="order-1 lg:order-2 space-y-6 md:space-y-8">
+<div class="flex items-center gap-4 mb-2">
+<div class="w-16 h-16 bg-surface-variant rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner border border-white">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
 </div>
-<h3 class="font-headline text-2xl md:text-3xl text-primary">Custom Branding</h3>
+<h3 class="font-headline text-3xl md:text-4xl font-bold text-primary tracking-wide">Custom Branding</h3>
 </div>
-<p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-6">Your logo, your design, your packaging. We create bespoke branding solutions that reflect your brand identity.</p>
-<ul class="space-y-4 mb-8">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Custom label design and printing</span>
+<p class="font-body-main text-on-surface-variant text-base md:text-lg leading-relaxed">Your logo, your design, your packaging. We create bespoke branding solutions that reflect your brand identity, delivering a ready-to-sell product directly from origin.</p>
+<ul class="space-y-5">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Custom label design and printing</span>
 </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Brand-specific packaging solutions</span>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Brand-specific packaging solutions (Pouches, Tins, Jars)</span>
 </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Regulatory compliance assistance</span>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Regulatory compliance and export assistance</span>
 </li>
 </ul>
-<a href="private-label.html" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 font-label-bold text-label-bold-md hover:bg-primary/20 transition-colors rounded-lg">
-<span>Learn More</span>
-<span class="material-symbols-outlined">arrow_forward</span>
+<div class="pt-4">
+<a href="private-label.html" class="inline-flex items-center gap-3 bg-primary border-2 border-primary text-white px-8 py-4 rounded-full font-label-bold uppercase tracking-wider text-sm md:text-base hover:bg-transparent hover:text-primary transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+<span>Explore Private Label</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
 </a>
+</div>
 </div>
 </div>
 
 <!-- Service 2: Steam Sterilization -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20 items-center">
-<div class="order-1 lg:order-1 space-y-6">
-<div class="flex items-center gap-4 mb-4">
-<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary text-2xl">science</span>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+<div class="order-1 lg:order-1 space-y-6 md:space-y-8">
+<div class="flex items-center gap-4 mb-2">
+<div class="w-16 h-16 bg-surface-variant rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner border border-white">
+<span class="material-symbols-outlined text-primary text-3xl">science</span>
 </div>
-<h3 class="font-headline text-2xl md:text-3xl text-primary">Steam Sterilization</h3>
+<h3 class="font-headline text-3xl md:text-4xl font-bold text-primary tracking-wide">Steam Sterilization</h3>
 </div>
-<p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-6">Advanced steam sterilization technology ensures food safety while preserving best quality of spices, essential oils and flavor compounds.</p>
-<ul class="space-y-4 mb-8">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Maintains organic certification standards</span>
+<p class="font-body-main text-on-surface-variant text-base md:text-lg leading-relaxed">Advanced steam sterilization technology ensures food safety while preserving the highest quality of spices, essential oils, and delicate flavor compounds.</p>
+<ul class="space-y-5">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Maintains strict organic certification standards</span>
 </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Preserves flavor and aroma profiles</span>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Preserves volatile oils, flavor, and rich aroma profiles</span>
 </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
-<span class="text-on-surface-variant text-sm md:text-base">Meets international food safety regulations</span>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm font-bold">check</span>
+</div>
+<span class="font-body-main text-on-surface-variant text-base md:text-lg">Meets international food safety regulations (FDA, EU)</span>
 </li>
 </ul>
-<a href="steam-sterilization.html" class="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 font-label-bold text-label-bold-md hover:bg-primary/20 transition-colors rounded-lg">
-<span>Learn More</span>
-<span class="material-symbols-outlined">arrow_forward</span>
+<div class="pt-4">
+<a href="steam-sterilization.html" class="inline-flex items-center gap-3 bg-white border-2 border-primary text-primary px-8 py-4 rounded-full font-label-bold uppercase tracking-wider text-sm md:text-base hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-xl hover:-translate-y-1">
+<span>Discover Sterilization</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
 </a>
 </div>
-<div class="order-2 lg:order-2 relative group rounded-xl overflow-hidden">
-<video class="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110" autoplay muted loop playsinline>
+</div>
+<div class="order-2 lg:order-2 relative group">
+<video class="w-full h-[350px] md:h-[450px] lg:h-[500px] object-cover transition-transform duration-1000 group-hover:scale-105" autoplay muted loop playsinline>
 <source src="assets/videos/steam-sterilization.mp4" type="video/mp4"/>
-Your browser does not support the video tag.
 </video>
 </div>
 </div>
@@ -454,41 +474,55 @@ Your browser does not support the video tag.
 </div>
 </section>
 <!-- SECTION 6: FARMER STORY -->
-<section class="relative py-16 md:py-20 lg:py-[120px] bg-stone-900 text-white overflow-hidden">
+<section class="relative py-16 md:py-24 lg:py-[120px] bg-stone-900 text-white overflow-hidden">
 <!-- Background image with parallax -->
 <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('assets/images/cgpl-home-hero-3.webp');"></div>
-<!-- Dark gradient overlay (fixed, no parallax) -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-<div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-<h2 class="font-headline text-2xl sm:text-3xl md:text-4xl text-white mb-6 md:mb-12">Sri Lankan Spice Heritage: From Farm to Global Markets</h2>
-<div class="max-w-3xl">
-<span class="material-symbols-outlined text-4xl md:text-6xl text-primary-fixed-dim mb-4 md:mb-6">format_quote</span>
-<p class="font-hero-display text-lg sm:text-xl md:text-2xl lg:text-3xl italic mb-6 md:mb-8">
-    "For generations, our families have cultivated the world's finest spices in Sri Lanka's fertile soil. Ceylonspizee brings our heritage directly to your table."
+<!-- Stronger Dark gradient overlay for text visibility -->
+<div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+
+<div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+<div class="text-center max-w-4xl mx-auto">
+<span class="inline-block py-1.5 px-5 mb-4 md:mb-6 rounded-full bg-white/10 text-white text-[10px] md:text-xs font-label-bold tracking-widest uppercase shadow-sm border border-white/20">
+Our Heritage
+</span>
+<h2 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white mb-8 md:mb-12">
+Sri Lankan Spice Heritage: From Farm to Global Markets
+</h2>
+
+<div class="relative bg-black/40 backdrop-blur-md p-8 md:p-12 lg:p-16 rounded-3xl border border-white/10 shadow-2xl mb-12 md:mb-16">
+<span class="absolute -top-6 left-1/2 -translate-x-1/2 material-symbols-outlined text-4xl md:text-6xl text-primary bg-stone-900 rounded-full p-2 border border-white/10 shadow-lg">format_quote</span>
+<p class="font-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl italic text-white/90 mb-8 md:mb-10 leading-relaxed font-light">
+"For generations, our families have cultivated the world's finest spices in Sri Lanka's fertile soil. Ceylonspizee brings our heritage directly to your table."
 </p>
-<p class="text-stone-300 font-body-main text-sm sm:text-base md:text-lg mb-8 md:mb-12">
-    Sri Lankan farmers are the guardians of ancient spice cultivation techniques passed down through centuries. We connect these dedicated farmers directly with global markets, ensuring fair compensation and sustainable practices. Every spice tells a story of tradition, quality, and the unwavering commitment of Sri Lankan farming communities to excellence.
+<p class="text-white/80 font-body-main text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+Sri Lankan farmers are the guardians of ancient spice cultivation techniques passed down through centuries. We connect these dedicated farmers directly with global markets, ensuring fair compensation and sustainable practices. Every spice tells a story of tradition, quality, and the unwavering commitment of Sri Lankan farming communities to excellence.
 </p>
 </div>
-<div class="w-full bg-white/10 backdrop-blur-sm p-4 md:p-8 flex flex-col md:flex-row justify-around items-center border border-white/10 gap-4 md:gap-8">
+</div>
+
+<!-- The 3 items (Interactive Cards/Buttons) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full max-w-5xl mx-auto mb-10 md:mb-16">
+<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all cursor-pointer group shadow-lg hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-3 group-hover:scale-110 transition-transform">map</span>
+<div class="text-xl md:text-2xl font-headline font-bold text-white mb-1">Sri Lankan Origin</div>
+<p class="text-[10px] md:text-xs uppercase font-label-bold tracking-widest text-white/60">Giving back to our farmers</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all cursor-pointer group shadow-lg hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-3 group-hover:scale-110 transition-transform">compost</span>
+<div class="text-xl md:text-2xl font-headline font-bold text-white mb-1">Organic & Conventional</div>
+<p class="text-[10px] md:text-xs uppercase font-label-bold tracking-widest text-white/60">Sustainable Farming</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all cursor-pointer group shadow-lg hover:-translate-y-1">
+<span class="material-symbols-outlined text-3xl md:text-4xl text-primary mb-3 group-hover:scale-110 transition-transform">handshake</span>
+<div class="text-xl md:text-2xl font-headline font-bold text-white mb-1">Direct Trade</div>
+<p class="text-[10px] md:text-xs uppercase font-label-bold tracking-widest text-white/60">Fair Pricing Guarantee</p>
+</div>
+</div>
+
 <div class="text-center">
-<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Sri Lankan Origin</div>
-<p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Giving back to our farmers</p>
-</div>
-<div class="h-8 md:h-12 w-px bg-white/20 hidden md:block"></div>
-<div class="text-center">
-<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Organic/Conventional</div>
-<p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Sustainable Farming</p>
-</div>
-<div class="h-8 md:h-12 w-px bg-white/20 hidden md:block"></div>
-<div class="text-center">
-<div class="text-2xl md:text-3xl font-hero-display text-primary-fixed-dim">Direct Trade</div>
-<p class="text-[10px] uppercase font-label-bold tracking-widest text-stone-400">Fair Pricing</p>
-</div>
-</div>
-<div class="text-center mt-8 md:mt-12">
-<a href="sri-lanka.html" class="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 font-label-bold text-label-bold md:text-label-bold-md hover:bg-white hover:text-stone-900 transition-colors text-center">
-    Read about Sri Lankan spice heritage
+<a href="sri-lanka.html" class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-full font-label-bold uppercase tracking-wider text-sm md:text-base hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+<span>Explore Sri Lankan Heritage</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -499,103 +533,103 @@ Your browser does not support the video tag.
 <div class="logo-circle" id="logoCircleWhy"></div>
 <div class="logo-center"></div>
 </div>
-<div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="text-center mb-8 md:mb-12 lg:mb-16">
-<span class="inline-block py-1 px-3 md:px-4 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-left md:text-center mb-10 md:mb-16 lg:mb-20">
+<span class="inline-block py-1.5 px-5 mb-4 md:mb-6 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-label-bold tracking-widest uppercase shadow-sm border border-primary/20">
 Why Choose Us
 </span>
-<h2 class="font-headline text-2xl sm:text-3xl md:text-4xl text-primary mb-3 md:mb-4">Why Importers Choose Ceylonspizee?</h2>
-<p class="text-secondary text-sm sm:text-base md:text-lg max-w-3xl mx-auto">Leading global importers trust Ceylonspizee for authentic Sri Lankan spices, transparent sourcing, and reliable export excellence.</p>
+<h2 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-wide text-on-surface mb-4 md:mb-6">Why Importers Choose Ceylonspizee?</h2>
+<p class="font-body-main text-on-surface-variant text-base sm:text-lg md:text-xl max-w-3xl mx-0 md:mx-auto leading-relaxed">Leading global importers trust Ceylonspizee for authentic Sri Lankan spices, transparent sourcing, and reliable export excellence.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
 <!-- Feature 1 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">verified</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">100% Authenticity</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">We ensure complete traceability and source directly from certified Sri Lankan farmers and producers.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">100% Authenticity</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">We ensure complete traceability and source directly from certified Sri Lankan farmers and producers.</p>
 </div>
 </div>
 <!-- Feature 2 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">eco</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Sustainable Sourcing</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">Our products are grown using eco-friendly farming practices that preserve soil, biodiversity, and local communities.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Sustainable Sourcing</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">Our products are grown using eco-friendly farming practices that preserve soil, biodiversity, and local communities.</p>
 </div>
 </div>
 <!-- Feature 3 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">public</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Global Export Expertise</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">We ship worldwide with proven experience in documentation, compliance, and logistics.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Global Export Expertise</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">We ship worldwide with proven experience in documentation, compliance, and logistics.</p>
 </div>
 </div>
 <!-- Feature 4 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">handshake</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Client-First Approach</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">We build long-term partnerships through personalized service and flexible solutions tailored to your market.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Client-First Approach</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">We build long-term partnerships through personalized service and flexible solutions tailored to your market.</p>
 </div>
 </div>
 <!-- Feature 5 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">spa</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Rare Oud & Spice Oils</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">We are pioneers in ethically extracting and offering Ceylon's most precious Oud and Agarwood oils.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Rare Oud & Spice Oils</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">We are pioneers in ethically extracting and offering Ceylon's most precious Oud and Agarwood oils.</p>
 </div>
 </div>
 <!-- Feature 6 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">payments</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">No Middlemen, No Hidden Costs</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">Direct pricing with full transparency.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">No Middlemen, No Hidden Costs</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">Direct pricing with full transparency.</p>
 </div>
 </div>
 <!-- Feature 7 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">local_shipping</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Faster Delivery</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">Streamlined logistics from harvest to port.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Faster Delivery</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">Streamlined logistics from harvest to port.</p>
 </div>
 </div>
 <!-- Feature 8 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">verified_user</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Verified Authenticity</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">True Ceylon cinnamon with certification and traceable origin.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Verified Authenticity</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">True Ceylon cinnamon with certification and traceable origin.</p>
 </div>
 </div>
 <!-- Feature 9 -->
-<div class="flex gap-4 md:gap-6 items-start">
-<div class="bg-primary-container text-on-primary-container w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shrink-0">
+<div class="flex gap-4 md:gap-6 items-start group">
+<div class="bg-primary text-white w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 shadow-md group-hover:bg-primary/90 transition-colors group-hover:scale-105 duration-300">
 <span class="material-symbols-outlined text-xl md:text-2xl">insights</span>
 </div>
 <div>
-<h3 class="font-section-heading text-section-heading md:text-section-heading-md mb-2 md:mb-3">Market Insights</h3>
-<p class="text-on-surface-variant font-body-main text-sm md:text-base">Stay informed with real-time pricing and export trends to make smarter purchasing decisions.</p>
+<h3 class="font-headline text-xl md:text-2xl font-bold tracking-wide text-on-surface mb-2">Market Insights</h3>
+<p class="text-on-surface-variant font-body-main text-sm md:text-base leading-relaxed">Stay informed with real-time pricing and export trends to make smarter purchasing decisions.</p>
 </div>
 </div>
 </div>

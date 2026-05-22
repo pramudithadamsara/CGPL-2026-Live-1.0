@@ -13,39 +13,69 @@
   gtag('config', 'G-YEKJ17BGS0');
 </script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Be+Vietnam+Pro:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;600;700&amp;family=Be+Vietnam+Pro:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="js/tailwind-config.js"></script>
 <link href="css/styles.css" rel="stylesheet"/>
 
 <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/></head>
-<body class="products-page bg-surface selection:bg-secondary-container">
+<body class="products-page bg-surface selection:bg-secondary-container font-body-main">
 <!-- Header Component Placeholder -->
 <div id="site-header"></div>
 <main>
+<!-- Hero Section -->
+<section class="relative min-h-[50vh] md:min-h-[60vh] flex flex-col justify-center overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 bg-stone-900">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 scale-105 opacity-50" alt="Premium Ceylon spices collection" src="assets/images/spices.webp"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
+
+<div class="relative z-10 w-full flex flex-col px-4 sm:px-12 lg:px-16 text-center">
+<div class="max-w-4xl mx-auto">
+    <!-- Badge -->
+    <div class="mb-5 md:mb-8">
+      <span class="text-white font-semibold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] sm:text-xs md:text-sm px-4 sm:px-5 py-2 sm:py-2.5 bg-white/10 backdrop-blur-md rounded-full inline-block border border-white/20 shadow-xl">
+        Our Premium Collection
+      </span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight md:leading-[1.05] mb-4 md:mb-6 drop-shadow-2xl">
+        Discover Our <span class="italic text-[#c59e5f]">Spices & Oud</span>
+    </h1>
+    
+    <!-- Subtitle -->
+    <p class="font-body-main text-white/90 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide drop-shadow-lg">
+        Harvested in small batches to ensure the highest concentration of essential oils, purity, and authentic flavor.
+    </p>
+</div>
+</div>
+
+<!-- Scroll Indicator -->
+<div class="absolute bottom-6 md:bottom-8 inset-x-0 flex justify-center z-20 pointer-events-none">
+    <a href="#product-catalog" class="text-white hover:text-[#c59e5f] transition-colors duration-300 animate-bounce pointer-events-auto cursor-pointer">
+        <span class="material-symbols-outlined text-6xl md:text-[80px] drop-shadow-xl">keyboard_arrow_down</span>
+    </a>
+</div>
+</section>
 <!-- Product Categories -->
-<section class="bg-surface-container-low pt-20 pb-16 px-4 sm:px-6 lg:px-8 md:pt-24 lg:pt-28">
+<section id="product-catalog" class="bg-surface-container-low pt-12 md:pt-16 pb-16 px-4 sm:px-6 lg:px-8">
 <div class="max-w-screen-2xl mx-auto">
-<div class="mb-12 md:mb-16">
-<div class="mb-8">
-<h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-headline text-on-surface mb-4">The Collection</h2>
-<p class="text-on-surface-variant max-w-md sm:max-w-lg md:max-w-xl">Our products are harvested in small batches to ensure the highest concentration of essential oils and purity.</p>
-</div>
+<div class="mb-10 md:mb-12">
 <!-- Search and Filter Controls -->
-<div class="flex flex-col gap-4 md:gap-6">
-<!-- Search Bar -->
-<div class="w-full">
-<div class="relative">
-<input type="text" id="product-search" placeholder="Search products..." class="w-full px-4 py-3 pl-12 bg-surface-container border border-outline-variant rounded-lg focus:outline-none focus:border-primary focus:bg-surface text-on-surface placeholder:text-on-surface-variant text-sm md:text-base">
-<span class="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-on-surface-variant text-lg md:text-xl">search</span>
-</div>
-</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 bg-surface-container-low md:bg-transparent rounded-2xl md:rounded-none p-2 md:p-0">
 <!-- Filter Buttons -->
-<div class="flex flex-wrap gap-2">
-<button class="filter-btn px-3 py-2 bg-primary text-on-primary rounded-lg font-medium transition-all text-xs sm:text-sm" data-filter="all">All</button>
-<button class="filter-btn px-3 py-2 bg-surface-container text-on-surface border border-outline-variant rounded-lg font-medium hover:bg-surface-container-high transition-all text-xs sm:text-sm" data-filter="spices">Spices</button>
-<button class="filter-btn px-3 py-2 bg-surface-container text-on-surface border border-outline-variant rounded-lg font-medium hover:bg-surface-container-high transition-all text-xs sm:text-sm" data-filter="oud">Oud Oils</button>
-<button class="filter-btn px-3 py-2 bg-surface-container text-on-surface border border-outline-variant rounded-lg font-medium hover:bg-surface-container-high transition-all text-xs sm:text-sm" data-filter="herbs">Herbs</button>
+<div class="flex flex-wrap items-center justify-center gap-2 md:gap-3 w-full md:w-auto order-2 md:order-1">
+<button class="filter-btn px-5 py-2.5 bg-primary text-on-primary rounded-full font-label-bold uppercase tracking-[0.1em] transition-all duration-300 shadow-md text-sm md:text-base hover:-translate-y-0.5 border border-transparent" data-filter="all">All</button>
+<button class="filter-btn px-5 py-2.5 bg-surface-container text-on-surface border border-outline-variant rounded-full font-label-bold uppercase tracking-[0.1em] transition-all duration-300 hover:shadow-md text-sm md:text-base hover:-translate-y-0.5 hover:bg-surface-container-high" data-filter="spices">Spices</button>
+<button class="filter-btn px-5 py-2.5 bg-surface-container text-on-surface border border-outline-variant rounded-full font-label-bold uppercase tracking-[0.1em] transition-all duration-300 hover:shadow-md text-sm md:text-base hover:-translate-y-0.5 hover:bg-surface-container-high" data-filter="oud">Oud Oils</button>
+<button class="filter-btn px-5 py-2.5 bg-surface-container text-on-surface border border-outline-variant rounded-full font-label-bold uppercase tracking-[0.1em] transition-all duration-300 hover:shadow-md text-sm md:text-base hover:-translate-y-0.5 hover:bg-surface-container-high" data-filter="herbs">Herbs</button>
+</div>
+
+<!-- Search Bar -->
+<div class="w-full md:w-[350px] lg:w-[400px] order-1 md:order-2 shrink-0">
+<div class="relative group">
+<input type="text" id="product-search" placeholder="Search premium collection..." class="w-full px-6 py-3.5 pl-12 bg-white/50 backdrop-blur-md border border-outline-variant/50 rounded-full focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary focus:bg-white text-on-surface placeholder:text-on-surface-variant transition-all duration-300 shadow-sm group-hover:shadow-md font-body-main text-sm md:text-base">
+<span class="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors duration-300">search</span>
+</div>
 </div>
 </div>
 </div>
@@ -66,7 +96,7 @@
 <h4 class="text-xl font-headline font-bold">Cinnamon Quills</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">ALBA Grade</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Authentic Cinnamomum zeylanicum, thin quills with sweet woody notes.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Authentic Cinnamomum zeylanicum, thin quills with sweet woody notes.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" title="Organic">eco</span>
 <span class="material-symbols-filled text-primary text-sm" title="Lab Tested">science</span>
@@ -87,7 +117,7 @@
 <h4 class="text-xl font-headline font-bold">Cinnamon Powder</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Fine Ground</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">True cinnamon powder with delicate sweet flavor and low coumarin content.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">True cinnamon powder with delicate sweet flavor and low coumarin content.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >verified</span>
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
@@ -107,7 +137,7 @@
 <h4 class="text-xl font-headline font-bold">Cinnamon Oil</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Essential Oil</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">True cinnamon essential oil with high cinnamaldehyde content for aromatherapy.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">True cinnamon essential oil with high cinnamaldehyde content for aromatherapy.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >spa</span>
 <span class="material-symbols-filled text-primary text-sm" >science</span>
@@ -127,7 +157,7 @@
 <h4 class="text-xl font-headline font-bold">Black Pepper</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">High Piperine</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Direct from Matale farms, known for intense heat and citrus undertones.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Direct from Matale farms, known for intense heat and citrus undertones.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >science</span>
@@ -147,7 +177,7 @@
 <h4 class="text-xl font-headline font-bold">White Pepper</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Refined Earthy</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Decorticated peppercorns with refined earthy flavor, ideal for light sauces.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Decorticated peppercorns with refined earthy flavor, ideal for light sauces.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >science</span>
@@ -167,7 +197,7 @@
 <h4 class="text-xl font-headline font-bold">Cardamom</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Green LG</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Hand-picked pods from the central highlands, intensely aromatic.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Hand-picked pods from the central highlands, intensely aromatic.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >auto_awesome</span>
@@ -187,7 +217,7 @@
 <h4 class="text-xl font-headline font-bold">Cloves</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Hand-Selected</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">High oil content, perfectly dried to preserve natural spicy warmth.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">High oil content, perfectly dried to preserve natural spicy warmth.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >science</span>
 <span class="material-symbols-filled text-primary text-sm" >auto_awesome</span>
@@ -207,7 +237,7 @@
 <h4 class="text-xl font-headline font-bold">Turmeric</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">High Curcumin</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Anti-inflammatory powerhouse with potent curcumin content for wellness applications.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Anti-inflammatory powerhouse with potent curcumin content for wellness applications.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >science</span>
@@ -227,7 +257,7 @@
 <h4 class="text-xl font-headline font-bold">Ginger</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Dried & Powdered</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Aromatic and spicy, perfect for culinary and wellness applications.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Aromatic and spicy, perfect for culinary and wellness applications.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >auto_awesome</span>
@@ -247,7 +277,7 @@
 <h4 class="text-xl font-headline font-bold">Lemongrass</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Fresh & Dried</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Citrusy and aromatic, ideal for teas and essential oil extraction.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Citrusy and aromatic, ideal for teas and essential oil extraction.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm" >eco</span>
 <span class="material-symbols-filled text-primary text-sm" >science</span>
@@ -267,7 +297,7 @@
 <h4 class="text-xl font-headline font-bold">Nutmeg & Mace</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Whole Seeds & Blades</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Dual spice with rich aroma - nutmeg seeds and mace blades for gourmet and fragrance uses.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Dual spice with rich aroma - nutmeg seeds and mace blades for gourmet and fragrance uses.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm">eco</span>
 <span class="material-symbols-filled text-primary text-sm">auto_awesome</span>
@@ -275,6 +305,7 @@
 <a href="products/nutmeg_mace.html" class="block w-full py-3 bg-surface-container-high text-secondary font-bold rounded-lg group-hover:bg-primary group-hover:text-on-primary transition-colors text-center">
                                     Learn More
                                 </a>
+</div>
 </div>
 </div>
 </div>
@@ -292,7 +323,7 @@
 <div class="absolute bottom-0 left-0 p-8 text-on-primary w-full">
 <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-2 block">Premium Archive</span>
 <h4 class="text-2xl font-headline mb-2">Pure Ceylon Oud Oil</h4>
-<p class="text-sm opacity-80 mb-6 font-light">Steam-distilled for 48 hours. Notes of wet earth, honey, and smoke.</p>
+<p class="text-base opacity-90 tracking-[0.03em] leading-relaxed mb-6 font-light">Steam-distilled for 48 hours. Notes of wet earth, honey, and smoke.</p>
 <a href="agarwood-oil-suppliers.html" class="block bg-tertiary text-on-tertiary w-full py-3 rounded-lg font-bold hover:bg-tertiary/90 transition-all text-center">
                                     Learn More
                                 </a>
@@ -305,7 +336,7 @@
 <div class="absolute bottom-0 left-0 p-8 text-on-primary w-full">
 <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-2 block">Raw Material</span>
 <h4 class="text-2xl font-headline mb-2">Agarwood Chips</h4>
-<p class="text-sm opacity-80 mb-6 font-light">Wild-harvested chips with deep resin saturation. Grade AAA.</p>
+<p class="text-base opacity-90 tracking-[0.03em] leading-relaxed mb-6 font-light">Wild-harvested chips with deep resin saturation. Grade AAA.</p>
 <span class="block bg-surface-container text-on-surface-variant w-full py-3 rounded-lg font-bold text-center opacity-50">Coming Soon</span>
 </div>
 </div>
@@ -316,7 +347,7 @@
 <div class="absolute bottom-0 left-0 p-8 text-on-primary w-full">
 <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-2 block">Bespoke Utility</span>
 <h4 class="text-2xl font-headline mb-2">Oud Powder</h4>
-<p class="text-sm opacity-80 mb-6 font-light">Ultra-fine powder for premium incense manufacturing and perfumery.</p>
+<p class="text-base opacity-90 tracking-[0.03em] leading-relaxed mb-6 font-light">Ultra-fine powder for premium incense manufacturing and perfumery.</p>
 <span class="block bg-surface-container text-on-surface-variant w-full py-3 rounded-lg font-bold text-center opacity-50">Coming Soon</span>
 </div>
 </div>
@@ -343,7 +374,7 @@
 <h4 class="text-xl font-headline font-bold">Moringa</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Superfood</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Nutrient-dense miracle tree leaves, rich in antioxidants and essential vitamins.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Nutrient-dense miracle tree leaves, rich in antioxidants and essential vitamins.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm">eco</span>
 <span class="material-symbols-filled text-primary text-sm">verified</span>
@@ -363,7 +394,7 @@
 <h4 class="text-xl font-headline font-bold">Butterfly Pea Flower</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Natural Blue</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Vibrant blue flowers for natural food coloring and herbal tea infusions.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Vibrant blue flowers for natural food coloring and herbal tea infusions.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm">eco</span>
 <span class="material-symbols-filled text-primary text-sm">auto_awesome</span>
@@ -383,7 +414,7 @@
 <h4 class="text-xl font-headline font-bold">Gotukola (Centella asiatica)</h4>
 <span class="text-xs bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full font-bold">Memory Herb</span>
 </div>
-<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Premium memory-enhancing herb, traditionally used for cognitive wellness and vitality.</p>
+<p class="text-base text-stone-700 font-medium tracking-[0.03em] leading-relaxed mb-6 line-clamp-2">Premium memory-enhancing herb, traditionally used for cognitive wellness and vitality.</p>
 <div class="flex gap-2 mb-6">
 <span class="material-symbols-filled text-primary text-sm">eco</span>
 <span class="material-symbols-filled text-primary text-sm">verified</span>
@@ -408,7 +439,7 @@
 <span class="material-symbols-outlined text-on-primary-container">package_2</span>
 </div>
 <div>
-<h5 class="font-bold text-sm md:text-lg mb-1 md:mb-2">Private Labeling</h5>
+<h5 class="font-headline font-bold text-lg md:text-xl mb-1 md:mb-2">Private Labeling</h5>
 <p class="text-sm md:text-lg text-on-surface-variant">Your brand, our premium quality. Complete packaging solutions from design to delivery.</p>
 </div>
 </div>
@@ -417,7 +448,7 @@
 <span class="material-symbols-outlined text-on-primary-container">layers</span>
 </div>
 <div>
-<h5 class="font-bold text-lg mb-1">Customizable Blends</h5>
+<h5 class="font-headline font-bold text-lg md:text-xl mb-1">Customizable Blends</h5>
 <p class="text-sm text-on-surface-variant">Collaborate with our experts to create unique spice ratios or oud concentrations for your specific market.</p>
 </div>
 </div>
@@ -426,7 +457,7 @@
 <span class="material-symbols-outlined text-on-primary-container">verified</span>
 </div>
 <div>
-<h5 class="font-bold text-lg mb-1">Lab Certification</h5>
+<h5 class="font-headline font-bold text-lg md:text-xl mb-1">Lab Certification</h5>
 <p class="text-sm text-on-surface-variant">Every batch is accompanied by COA (Certificate of Analysis) from accredited laboratories.</p>
 </div>
 </div>
@@ -500,11 +531,11 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             // Update button styles
             filterButtons.forEach(b => {
-                b.classList.remove('bg-primary', 'text-on-primary');
+                b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md', 'border-transparent');
                 b.classList.add('bg-surface-container', 'text-on-surface', 'border', 'border-outline-variant');
             });
             this.classList.remove('bg-surface-container', 'text-on-surface', 'border', 'border-outline-variant');
-            this.classList.add('bg-primary', 'text-on-primary');
+            this.classList.add('bg-primary', 'text-on-primary', 'shadow-md', 'border-transparent');
             
             doSearch();
         });
@@ -516,5 +547,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
 
