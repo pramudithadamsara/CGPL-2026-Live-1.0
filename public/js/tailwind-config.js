@@ -5,7 +5,7 @@
 
 tailwind.config = {
     darkMode: "class",
-    safelist: ['bg-stone-900', 'text-stone-400', 'text-stone-200', 'border-orange-800', 'text-orange-500', 'hover:text-orange-400', 'shadow-sm', 'shadow-lg', 'text-white', 'border-white/5', 'bg-primary', 'text-on-primary', 'z-50', 'z-40', 'pb-1', 'border-b-2', 'border-b'],
+    safelist: ['bg-stone-900', 'text-stone-400', 'text-stone-200', 'border-primary', 'text-primary', 'shadow-sm', 'shadow-lg', 'text-white', 'border-white/5', 'bg-primary', 'text-on-primary', 'z-50', 'z-40', 'pb-1', 'border-b-2', 'border-b'],
     theme: {
         extend: {
             "colors": {
@@ -23,7 +23,7 @@ tailwind.config = {
                 "surface-container-low": "#f6f3f2",
                 "on-error-container": "#93000a",
                 "tertiary-fixed-dim": "#95d4b3",
-                "primary": "#603308",
+                "primary": "#c59e5f",
                 "error-container": "#ffdad6",
                 "surface-container-lowest": "#ffffff",
                 "inverse-on-surface": "#f3f0ef",

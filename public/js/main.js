@@ -52,9 +52,9 @@ function initNavigation() {
         const linkPage = link.getAttribute('data-page');
         if (linkPage === pageName) {
             link.classList.remove('text-stone-400');
-            link.classList.add('text-white', 'border-b-2', 'border-orange-800', 'pb-1');
+            link.classList.add('text-white', 'border-b-2', 'border-primary', 'pb-1');
         } else {
-            link.classList.remove('text-white', 'border-b-2', 'border-orange-800', 'pb-1');
+            link.classList.remove('text-white', 'border-b-2', 'border-primary', 'pb-1');
             link.classList.add('text-stone-400');
         }
     });

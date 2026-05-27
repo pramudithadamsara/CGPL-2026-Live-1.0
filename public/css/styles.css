@@ -47,7 +47,7 @@
 
 /* Active Navigation State */
 .active-nav {
-    border-bottom: 2px solid #603308;
+    border-bottom: 2px solid #c59e5f;
     padding-bottom: 4px;
 }
 
@@ -188,7 +188,7 @@ html {
 /* Focus States for Accessibility */
 a:focus-visible,
 button:focus-visible {
-    outline: 2px solid #603308;
+    outline: 2px solid #c59e5f;
     outline-offset: 2px;
 }
 
